@@ -1,0 +1,20 @@
+# This config file contains input parameters
+#
+# System parameters
+-DesignOptimization None
+-numCoreVMax 20
+-numCoreHMax 20
+
+# Core parameters
+-IOBits 6
+-numArrayCol 64
+-numArrayRow 64
+
+# Cell parameters
+-CellType DigitalRRAMTHU
+-WeightBits 8
+-CellBits 2
+-Rmin 25e3
+-Rmax 265e3
+-ReadVoltage 0.1
+

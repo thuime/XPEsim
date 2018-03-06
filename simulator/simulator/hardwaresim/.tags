@@ -1,0 +1,1075 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ADDER_H_	.\Adder.h	40;"	d
+AVG_RATIO_LEAK_2INPUT_NAND	.\constant.h	66;"	d
+AVG_RATIO_LEAK_2INPUT_NOR	.\constant.h	68;"	d
+AVG_RATIO_LEAK_3INPUT_NAND	.\constant.h	67;"	d
+AVG_RATIO_LEAK_3INPUT_NOR	.\constant.h	69;"	d
+Adder	.\Adder.cpp	/^Adder::Adder(const InputParameter& _inputParameter, const Technology& _tech, const MemCell& _cell): inputParameter(_inputParameter), tech(_tech), cell(_cell), FunctionUnit() {$/;"	f	class:Adder
+Adder	.\Adder.h	/^class Adder: public FunctionUnit {$/;"	c
+AreaModify	.\typedef.h	/^enum AreaModify$/;"	g
+BJT_access	.\typedef.h	/^	BJT_access,$/;"	e	enum:CellAccessType
+CMOS	.\typedef.h	/^	CMOS,		\/* Normal read circuit *\/$/;"	e	enum:ReadCircuitMode
+CMOS_access	.\typedef.h	/^	CMOS_access,$/;"	e	enum:CellAccessType
+COL_MODE	.\constant.h	84;"	d
+COMPARATOR_H_	.\Comparator.h	40;"	d
+CONSTANT_H_	.\constant.h	40;"	d
+CONTACT_SIZE	.\constant.h	58;"	d
+CURRENTSENSEAMP_H_	.\CurrentSenseAmp.h	41;"	d
+CalculateArea	.\Adder.cpp	/^void Adder::CalculateArea(double _newHeight, double _newWidth, AreaModify _option) {$/;"	f	class:Adder
+CalculateArea	.\Comparator.cpp	/^void Comparator::CalculateArea(double widthArray){$/;"	f	class:Comparator
+CalculateArea	.\CurrentSenseAmp.cpp	/^void CurrentSenseAmp::CalculateArea(double widthArray) {	\/\/ adjust CurrentSenseAmp area by fixing S\/A width$/;"	f	class:CurrentSenseAmp
+CalculateArea	.\DFF.cpp	/^void DFF::CalculateArea(double _newHeight, double _newWidth, AreaModify _option) {$/;"	f	class:DFF
+CalculateArea	.\DeMux.cpp	/^void DeMux::CalculateArea(double _newHeight, double _newWidth, AreaModify _option){$/;"	f	class:DeMux
+CalculateArea	.\DecoderDriver.cpp	/^void DecoderDriver::CalculateArea(double _newHeight, double _newWidth, AreaModify _option) {$/;"	f	class:DecoderDriver
+CalculateArea	.\LUT.cpp	/^void LUT::CalculateArea(double _newHeight, double _newWidth, AreaModify _option) {$/;"	f	class:LUT
+CalculateArea	.\MultilevelSAEncoder.cpp	/^void MultilevelSAEncoder::CalculateArea(double _newHeight, double _newWidth, AreaModify _option) {$/;"	f	class:MultilevelSAEncoder
+CalculateArea	.\MultilevelSenseAmp.cpp	/^void MultilevelSenseAmp::CalculateArea(double heightArray, double widthArray, AreaModify _option) {$/;"	f	class:MultilevelSenseAmp
+CalculateArea	.\Mux.cpp	/^void Mux::CalculateArea(double _newHeight, double _newWidth, AreaModify _option){$/;"	f	class:Mux
+CalculateArea	.\NewSwitchMatrix.cpp	/^void NewSwitchMatrix::CalculateArea(double _newHeight, double _newWidth, AreaModify _option) {$/;"	f	class:NewSwitchMatrix
+CalculateArea	.\Precharger.cpp	/^void Precharger::CalculateArea(double _newHeight, double _newWidth, AreaModify _option) {$/;"	f	class:Precharger
+CalculateArea	.\ReadCircuit.cpp	/^void ReadCircuit::CalculateArea(double _newWidth) {	\/\/ Just add up the area of all the components$/;"	f	class:ReadCircuit
+CalculateArea	.\RippleCounter.cpp	/^void RippleCounter::CalculateArea(double _newHeight, double _newWidth, AreaModify _option) {$/;"	f	class:RippleCounter
+CalculateArea	.\RowDecoder.cpp	/^void RowDecoder::CalculateArea(double _newHeight, double _newWidth, AreaModify _option) {$/;"	f	class:RowDecoder
+CalculateArea	.\SRAMWriteDriver.cpp	/^void SRAMWriteDriver::CalculateArea(double _newHeight, double _newWidth, AreaModify _option) {$/;"	f	class:SRAMWriteDriver
+CalculateArea	.\SenseAmp.cpp	/^void SenseAmp::CalculateArea(double _newHeight, double _newWidth, AreaModify _option) {$/;"	f	class:SenseAmp
+CalculateArea	.\ShiftAdd.cpp	/^void ShiftAdd::CalculateArea(double _newHeight, double _newWidth, AreaModify _option) {$/;"	f	class:ShiftAdd
+CalculateArea	.\SubArray.cpp	/^void SubArray::CalculateArea() {  \/\/calculate layout area for total design$/;"	f	class:SubArray
+CalculateArea	.\SwitchMatrix.cpp	/^void SwitchMatrix::CalculateArea(double _newHeight, double _newWidth, AreaModify _option) {$/;"	f	class:SwitchMatrix
+CalculateArea	.\VoltageSenseAmp.cpp	/^void VoltageSenseAmp::CalculateArea(double _widthVoltageSenseAmp) {	\/\/ Just add up the area of all the components$/;"	f	class:VoltageSenseAmp
+CalculateArea	.\WLDecoderOutput.cpp	/^void WLDecoderOutput::CalculateArea(double _newHeight, double _newWidth, AreaModify _option) {$/;"	f	class:WLDecoderOutput
+CalculateArea	.\WLNewDecoderDriver.cpp	/^void WLNewDecoderDriver::CalculateArea(double _newHeight, double _newWidth, AreaModify _option) {$/;"	f	class:WLNewDecoderDriver
+CalculateDrainCap	.\formula.cpp	/^double CalculateDrainCap($/;"	f
+CalculateGateArea	.\formula.cpp	/^double CalculateGateArea(	\/\/ Calculate layout area and width of logic gate given fixed layout height$/;"	f
+CalculateGateCap	.\formula.cpp	/^double CalculateGateCap(double width, Technology tech) {$/;"	f
+CalculateGateCapacitance	.\formula.cpp	/^void CalculateGateCapacitance($/;"	f
+CalculateGateLeakage	.\formula.cpp	/^double CalculateGateLeakage($/;"	f
+CalculateLatency	.\Adder.cpp	/^void Adder::CalculateLatency(double _rampInput, double _capLoad, double numRead){$/;"	f	class:Adder
+CalculateLatency	.\Comparator.cpp	/^void Comparator::CalculateLatency(double _rampInput, double _capLoad, double numRead){$/;"	f	class:Comparator
+CalculateLatency	.\CurrentSenseAmp.cpp	/^void CurrentSenseAmp::CalculateLatency(double numRead, int currentlevel) {$/;"	f	class:CurrentSenseAmp
+CalculateLatency	.\DFF.cpp	/^void DFF::CalculateLatency(double _rampInput, double numRead){$/;"	f	class:DFF
+CalculateLatency	.\DeMux.cpp	/^void DeMux::CalculateLatency(double _rampInput, double numRead) {	\/\/ rampInput actually is not used$/;"	f	class:DeMux
+CalculateLatency	.\DecoderDriver.cpp	/^void DecoderDriver::CalculateLatency(double _rampInput, double _capLoad1, double _capLoad2, double _resLoad, double numRead, double numWrite) {$/;"	f	class:DecoderDriver
+CalculateLatency	.\LUT.cpp	/^void LUT::CalculateLatency(double _capLoad, double numRead) {$/;"	f	class:LUT
+CalculateLatency	.\MultilevelSAEncoder.cpp	/^void MultilevelSAEncoder::CalculateLatency(double _rampInput, double numRead){$/;"	f	class:MultilevelSAEncoder
+CalculateLatency	.\MultilevelSenseAmp.cpp	/^void MultilevelSenseAmp::CalculateLatency(double numRead) {$/;"	f	class:MultilevelSenseAmp
+CalculateLatency	.\Mux.cpp	/^void Mux::CalculateLatency(double _rampInput, double _capLoad, double numRead) {  \/\/ rampInput is from SL\/BL, not fron EN signal$/;"	f	class:Mux
+CalculateLatency	.\NewSwitchMatrix.cpp	/^void NewSwitchMatrix::CalculateLatency(double _rampInput, double _capLoad, double _resLoad, double numRead, double numWrite) {	\/\/ For simplicity, assume shift register is ideal$/;"	f	class:NewSwitchMatrix
+CalculateLatency	.\Precharger.cpp	/^void Precharger::CalculateLatency(double _rampInput, double _capLoad, double numRead, double numWrite){$/;"	f	class:Precharger
+CalculateLatency	.\ReadCircuit.cpp	/^void ReadCircuit::CalculateLatency(double numRead) {$/;"	f	class:ReadCircuit
+CalculateLatency	.\RippleCounter.cpp	/^void RippleCounter::CalculateLatency(double numRead) {    \/\/ numRead = number of columns share 1 S\/A$/;"	f	class:RippleCounter
+CalculateLatency	.\RowDecoder.cpp	/^void RowDecoder::CalculateLatency(double _rampInput, double _capLoad1, double _capLoad2, double numRead, double numWrite) {$/;"	f	class:RowDecoder
+CalculateLatency	.\SRAMWriteDriver.cpp	/^void SRAMWriteDriver::CalculateLatency(double _rampInput, double _capLoad, double _resLoad, double numWrite){$/;"	f	class:SRAMWriteDriver
+CalculateLatency	.\SenseAmp.cpp	/^void SenseAmp::CalculateLatency(double numRead) {$/;"	f	class:SenseAmp
+CalculateLatency	.\ShiftAdd.cpp	/^void ShiftAdd::CalculateLatency(double numRead) {$/;"	f	class:ShiftAdd
+CalculateLatency	.\SubArray.cpp	/^void SubArray::CalculateLatency(double _rampInput) {   \/\/calculate latency for different mode $/;"	f	class:SubArray
+CalculateLatency	.\SwitchMatrix.cpp	/^void SwitchMatrix::CalculateLatency(double _rampInput, double _capLoad, double _resLoad, double numRead, double numWrite) {	\/\/ For simplicity, assume shift register is ideal$/;"	f	class:SwitchMatrix
+CalculateLatency	.\VoltageSenseAmp.cpp	/^void VoltageSenseAmp::CalculateLatency(double capInputLoad, double numRead) {$/;"	f	class:VoltageSenseAmp
+CalculateLatency	.\WLDecoderOutput.cpp	/^void WLDecoderOutput::CalculateLatency(double _rampInput, double _capLoad, double _resLoad, double numRead, double numWrite) {$/;"	f	class:WLDecoderOutput
+CalculateLatency	.\WLNewDecoderDriver.cpp	/^void WLNewDecoderDriver::CalculateLatency(double _rampInput, double _capLoad, double _resLoad, double numRead, double numWrite) {$/;"	f	class:WLNewDecoderDriver
+CalculateOnResistance	.\formula.cpp	/^double CalculateOnResistance(double width, int type, double temperature, Technology tech) {$/;"	f
+CalculatePassGateArea	.\formula.cpp	/^double CalculatePassGateArea(	\/\/ Calculate layout area, height and width of pass gate given the number of folding on the pass gate width$/;"	f
+CalculatePower	.\Adder.cpp	/^void Adder::CalculatePower(double numRead, int numAdderPerOperation) {$/;"	f	class:Adder
+CalculatePower	.\Comparator.cpp	/^void Comparator::CalculatePower(double numRead, int numComparatorPerOperation) {$/;"	f	class:Comparator
+CalculatePower	.\CurrentSenseAmp.cpp	/^void CurrentSenseAmp::CalculatePower(double numRead, int currentlevel) {$/;"	f	class:CurrentSenseAmp
+CalculatePower	.\DFF.cpp	/^void DFF::CalculatePower(double numRead, double numDffPerOperation) {$/;"	f	class:DFF
+CalculatePower	.\DeMux.cpp	/^void DeMux::CalculatePower(double numRead) {$/;"	f	class:DeMux
+CalculatePower	.\DecoderDriver.cpp	/^void DecoderDriver::CalculatePower(double numReadCellPerOp, double numWriteCellPerOp, double numRead, double numWrite) {$/;"	f	class:DecoderDriver
+CalculatePower	.\LUT.cpp	/^void LUT::CalculatePower(double numRead) {$/;"	f	class:LUT
+CalculatePower	.\MultilevelSAEncoder.cpp	/^void MultilevelSAEncoder::CalculatePower(double numRead) {$/;"	f	class:MultilevelSAEncoder
+CalculatePower	.\MultilevelSenseAmp.cpp	/^void MultilevelSenseAmp::CalculatePower(double numof1, double numof2, double numof3, double numof4, double numof5, double numof6, double numof7, double numof8, double numof9, double numof10, double numRead) {$/;"	f	class:MultilevelSenseAmp
+CalculatePower	.\Mux.cpp	/^void Mux::CalculatePower(double numRead) {$/;"	f	class:Mux
+CalculatePower	.\NewSwitchMatrix.cpp	/^void NewSwitchMatrix::CalculatePower(double numRead, double numWrite) {      $/;"	f	class:NewSwitchMatrix
+CalculatePower	.\Precharger.cpp	/^void Precharger::CalculatePower(double numRead, double numWrite) {$/;"	f	class:Precharger
+CalculatePower	.\ReadCircuit.cpp	/^void ReadCircuit::CalculatePower(double numRead) {$/;"	f	class:ReadCircuit
+CalculatePower	.\RippleCounter.cpp	/^void RippleCounter::CalculatePower(double numRead) {$/;"	f	class:RippleCounter
+CalculatePower	.\RowDecoder.cpp	/^void RowDecoder::CalculatePower(double numRead, double numWrite) {$/;"	f	class:RowDecoder
+CalculatePower	.\SRAMWriteDriver.cpp	/^void SRAMWriteDriver::CalculatePower(double numWrite) {$/;"	f	class:SRAMWriteDriver
+CalculatePower	.\SenseAmp.cpp	/^void SenseAmp::CalculatePower(double numRead) {$/;"	f	class:SenseAmp
+CalculatePower	.\ShiftAdd.cpp	/^void ShiftAdd::CalculatePower(double numRead) {$/;"	f	class:ShiftAdd
+CalculatePower	.\SubArray.cpp	/^void SubArray::CalculatePower() {$/;"	f	class:SubArray
+CalculatePower	.\SwitchMatrix.cpp	/^void SwitchMatrix::CalculatePower(double numRead, double numWrite) {$/;"	f	class:SwitchMatrix
+CalculatePower	.\VoltageSenseAmp.cpp	/^void VoltageSenseAmp::CalculatePower(double numRead) {$/;"	f	class:VoltageSenseAmp
+CalculatePower	.\WLDecoderOutput.cpp	/^void WLDecoderOutput::CalculatePower(double numRead, double numWrite) {$/;"	f	class:WLDecoderOutput
+CalculatePower	.\WLNewDecoderDriver.cpp	/^void WLNewDecoderDriver::CalculatePower(double numRead, double numWrite) {$/;"	f	class:WLNewDecoderDriver
+CalculateTransconductance	.\formula.cpp	/^double CalculateTransconductance(double width, int type, Technology tech) {$/;"	f
+CalculateUnitArea	.\Comparator.cpp	/^void Comparator::CalculateUnitArea(AreaModify _option) {$/;"	f	class:Comparator
+CalculateUnitArea	.\CurrentSenseAmp.cpp	/^void CurrentSenseAmp::CalculateUnitArea() {$/;"	f	class:CurrentSenseAmp
+CalculateUnitArea	.\ReadCircuit.cpp	/^void ReadCircuit::CalculateUnitArea() {$/;"	f	class:ReadCircuit
+CalculateUnitArea	.\VoltageSenseAmp.cpp	/^void VoltageSenseAmp::CalculateUnitArea() {$/;"	f	class:VoltageSenseAmp
+CellAccessType	.\typedef.h	/^enum CellAccessType$/;"	g
+Comparator	.\Comparator.cpp	/^Comparator::Comparator(const InputParameter& _inputParameter, const Technology& _tech, const MemCell& _cell): inputParameter(_inputParameter), tech(_tech), cell(_cell), FunctionUnit() {$/;"	f	class:Comparator
+Comparator	.\Comparator.h	/^class Comparator: public FunctionUnit {$/;"	c
+CurrentSenseAmp	.\CurrentSenseAmp.cpp	/^CurrentSenseAmp::CurrentSenseAmp(const InputParameter& _inputParameter, const Technology& _tech, const MemCell& _cell): inputParameter(_inputParameter), tech(_tech), cell(_cell), FunctionUnit() {$/;"	f	class:CurrentSenseAmp
+CurrentSenseAmp	.\CurrentSenseAmp.h	/^class CurrentSenseAmp: public FunctionUnit {$/;"	c
+DATAIO_H_	.\DataIO.h	4;"	d
+DEMUX_H_	.\DeMux.h	40;"	d
+DFF	.\DFF.cpp	/^DFF::DFF(const InputParameter& _inputParameter, const Technology& _tech, const MemCell& _cell): inputParameter(_inputParameter), tech(_tech), cell(_cell), FunctionUnit() {$/;"	f	class:DFF
+DFF	.\DFF.h	/^class DFF: public FunctionUnit {$/;"	c
+DFF_H_	.\DFF.h	40;"	d
+DeMux	.\DeMux.cpp	/^DeMux::DeMux(const InputParameter& _inputParameter, const Technology& _tech, const MemCell& _cell): inputParameter(_inputParameter), tech(_tech), cell(_cell), FunctionUnit() {$/;"	f	class:DeMux
+DeMux	.\DeMux.h	/^class DeMux: public FunctionUnit {$/;"	c
+DecoderDriver	.\DecoderDriver.cpp	/^DecoderDriver::DecoderDriver(const InputParameter& _inputParameter, const Technology& _tech, const MemCell& _cell): inputParameter(_inputParameter), tech(_tech), cell(_cell), FunctionUnit() {$/;"	f	class:DecoderDriver
+DecoderDriver	.\DecoderDriver.h	/^class DecoderDriver: public FunctionUnit {$/;"	c
+DecoderDriver_H_	.\DecoderDriver.h	40;"	d
+DecoderMode	.\typedef.h	/^enum DecoderMode$/;"	g
+DeviceRoadmap	.\typedef.h	/^enum DeviceRoadmap$/;"	g
+DisplayWeightMatrix	.\DataIO.cpp	/^void DisplayWeightMatrix(vector<vector<double>>& ReadWeight)$/;"	f
+DisplayWeightMatrix	.\test.cpp	/^void DisplayWeightMatrix(vector<vector<double>>& ReadWeight)$/;"	f
+FET_2D	.\typedef.h	/^	FET_2D,			\/* 2D FET *\/$/;"	e	enum:TransistorType
+FPGA	.\MultilevelSenseAmp.h	/^	bool FPGA;$/;"	m	class:MultilevelSenseAmp
+FPGA	.\Mux.h	/^	bool FPGA;$/;"	m	class:Mux
+FPGA	.\Precharger.h	/^	bool FPGA;$/;"	m	class:Precharger
+FPGA	.\SRAMWriteDriver.h	/^	bool FPGA;$/;"	m	class:SRAMWriteDriver
+FPGA	.\SenseAmp.h	/^	bool FPGA;$/;"	m	class:SenseAmp
+FPGA	.\SubArray.h	/^	bool FPGA;			\/\/ FPGA mode$/;"	m	class:SubArray
+FUNCTIONUNIT_H_	.\FunctionUnit.h	40;"	d
+FirstLayer	.\SubArray.h	/^	bool FirstLayer;       \/\/ First layer ANN$/;"	m	class:SubArray
+FunctionUnit	.\FunctionUnit.cpp	/^FunctionUnit::FunctionUnit() {$/;"	f	class:FunctionUnit
+FunctionUnit	.\FunctionUnit.h	/^class FunctionUnit {$/;"	c
+HEIGHT_WIDTH_RATIO_LIMIT	.\constant.h	79;"	d
+HP	.\typedef.h	/^	HP,		\/* High performance *\/$/;"	e	enum:DeviceRoadmap
+INPUTPARAMETER_H_	.\InputParameter.h	40;"	d
+INV	.\constant.h	42;"	d
+IR_DROP_TOLERANCE	.\constant.h	77;"	d
+Initialize	.\Adder.cpp	/^void Adder::Initialize(int _numBit, int _numAdder){$/;"	f	class:Adder
+Initialize	.\Comparator.cpp	/^void Comparator::Initialize(int _numBit, int _numComparator) {$/;"	f	class:Comparator
+Initialize	.\CurrentSenseAmp.cpp	/^void CurrentSenseAmp::Initialize(int _numCol, bool _parallel, bool _rowbyrow, double _clkFreq, int _numReadCellPerOperationNeuro) {$/;"	f	class:CurrentSenseAmp
+Initialize	.\DFF.cpp	/^void DFF::Initialize(int _numDff, double _clkFreq){$/;"	f	class:DFF
+Initialize	.\DeMux.cpp	/^void DeMux::Initialize(int _numInput, int numRow){$/;"	f	class:DeMux
+Initialize	.\DecoderDriver.cpp	/^void DecoderDriver::Initialize(int _mode, int _numOutput \/* # of array rows\/columns *\/, int numLoad) {$/;"	f	class:DecoderDriver
+Initialize	.\LUT.cpp	/^void LUT::Initialize(bool _SRAM, int _numYbit, int _numEntry, double _clkFreq) {$/;"	f	class:LUT
+Initialize	.\MultilevelSAEncoder.cpp	/^void MultilevelSAEncoder::Initialize(int _numLevel, int _numEncoder){$/;"	f	class:MultilevelSAEncoder
+Initialize	.\MultilevelSenseAmp.cpp	/^void MultilevelSenseAmp::Initialize(int _numCol, int _levelOutput, double _clkFreq, int _numReadCellPerOperationNeuro) {$/;"	f	class:MultilevelSenseAmp
+Initialize	.\Mux.cpp	/^void Mux::Initialize(int _numInput, int _numSelection, double _resTg, bool _FPGA){$/;"	f	class:Mux
+Initialize	.\NewSwitchMatrix.cpp	/^void NewSwitchMatrix::Initialize(int _numOutput, double _activityRowRead, double _clkFreq){$/;"	f	class:NewSwitchMatrix
+Initialize	.\Precharger.cpp	/^void Precharger::Initialize(int _numCol, double _resLoad, bool _FPGA, bool _neuro, double _activityColWrite, int _numReadCellPerOperationFPGA, int _numWriteCellPerOperationFPGA,$/;"	f	class:Precharger
+Initialize	.\ReadCircuit.cpp	/^void ReadCircuit::Initialize(ReadCircuitMode _mode, int _numReadCol, int _maxNumIntBit, SpikingMode _spikingMode, double _clkFreq) {$/;"	f	class:ReadCircuit
+Initialize	.\RippleCounter.cpp	/^void RippleCounter::Initialize(int _numBit, double _clkFreq) {$/;"	f	class:RippleCounter
+Initialize	.\RowDecoder.cpp	/^void RowDecoder::Initialize(DecoderMode _mode, int _numAddrRow, bool _MUX, bool _parallel) {$/;"	f	class:RowDecoder
+Initialize	.\SRAMWriteDriver.cpp	/^void SRAMWriteDriver::Initialize(int _numCol, bool _FPGA, bool _neuro, double _activityColWrite, int _numWriteCellPerOperationFPGA, int _numWriteCellPerOperationMemory, int _numWriteCellPerOperationNeuro){$/;"	f	class:SRAMWriteDriver
+Initialize	.\SenseAmp.cpp	/^void SenseAmp::Initialize(int _numCol, bool _currentSense, double _senseVoltage, double _pitchSenseAmp, bool _FPGA, bool _neuro, double _clkFreq, int _numReadCellPerOperationFPGA, int _numReadCellPerOperationMemory, int _numReadCellPerOperationNeuro) {$/;"	f	class:SenseAmp
+Initialize	.\ShiftAdd.cpp	/^void ShiftAdd::Initialize(int _numUnit, int _numAdderBit, double _clkFreq, SpikingMode _spikingMode, int _numReadPulse) {$/;"	f	class:ShiftAdd
+Initialize	.\SubArray.cpp	/^void SubArray::Initialize(int _numRow, int _numCol, double _unitWireRes){  \/\/initialization module$/;"	f	class:SubArray
+Initialize	.\SwitchMatrix.cpp	/^void SwitchMatrix::Initialize(int _mode, int _numOutput, double _resTg, bool _neuro, bool _parallelWrite, double _activityRowRead, double _activityColWrite, int _numWriteCellPerOperationMemory, int _numWriteCellPerOperationNeuro, double _numWritePulse, double _clkFreq){$/;"	f	class:SwitchMatrix
+Initialize	.\Technology.cpp	/^void Technology::Initialize(int _featureSizeInNano, DeviceRoadmap _deviceRoadmap, TransistorType _transistorType) {$/;"	f	class:Technology
+Initialize	.\VoltageSenseAmp.cpp	/^void VoltageSenseAmp::Initialize(int _numReadCol, double _clkFreq) {$/;"	f	class:VoltageSenseAmp
+Initialize	.\WLDecoderOutput.cpp	/^void WLDecoderOutput::Initialize(int _numWLRow, bool _multifunctional, bool _neuro) {$/;"	f	class:WLDecoderOutput
+Initialize	.\WLNewDecoderDriver.cpp	/^void WLNewDecoderDriver::Initialize(int _numWLRow) {$/;"	f	class:WLNewDecoderDriver
+InputParameter	.\InputParameter.h	/^class InputParameter {$/;"	c
+LSTP	.\typedef.h	/^	LSTP	\/* Low standby power *\/$/;"	e	enum:DeviceRoadmap
+LUT	.\LUT.cpp	/^LUT::LUT(const InputParameter& _inputParameter, const Technology& _tech, const MemCell& _cell): inputParameter(_inputParameter), tech(_tech), cell(_cell), mux(_inputParameter, _tech, _cell), muxDecoder(_inputParameter, _tech, _cell), colDecoder(_inputParameter, _tech, _cell), colDecoderDriver(_inputParameter, _tech, _cell), voltageSenseAmp(_inputParameter, _tech, _cell), FunctionUnit() {$/;"	f	class:LUT
+LUT	.\LUT.h	/^class LUT: public FunctionUnit {$/;"	c
+LUT_H_	.\LUT.h	40;"	d
+LUT_dynamic	.\SubArray.h	/^	bool LUT_dynamic;   \/\/ Parameter for FPGA$/;"	m	class:SubArray
+M2_PITCH	.\constant.h	63;"	d
+M3_PITCH	.\constant.h	64;"	d
+MAGIC	.\typedef.h	/^	MAGIC,		\/* Use magic folding based on the original area *\/$/;"	e	enum:AreaModify
+MAX	.\formula.h	44;"	d
+MAX_NMOS_SIZE	.\constant.h	49;"	d
+MAX_TRANSISTOR_HEIGHT	.\constant.h	52;"	d
+MIN	.\formula.h	45;"	d
+MIN_GAP_BET_CONTACT_POLY	.\constant.h	57;"	d
+MIN_GAP_BET_FIELD_POLY	.\constant.h	61;"	d
+MIN_GAP_BET_GATE_POLY	.\constant.h	56;"	d
+MIN_GAP_BET_P_AND_N_DIFFS	.\constant.h	54;"	d
+MIN_GAP_BET_SAME_TYPE_DIFFS	.\constant.h	55;"	d
+MIN_NMOS_SIZE	.\constant.h	50;"	d
+MIN_POLY_EXT_DIFF	.\constant.h	60;"	d
+MIN_WIDTH_POWER_RAIL	.\constant.h	59;"	d
+MULTILEVELSENSEAMP_H_	.\MultilevelSenseAmp.h	40;"	d
+MUX	.\RowDecoder.h	/^	bool MUX;	\/\/ MUX mode$/;"	m	class:RowDecoder
+MUX_H_	.\Mux.h	40;"	d
+MagicLayout	.\FunctionUnit.cpp	/^void FunctionUnit::MagicLayout() {$/;"	f	class:FunctionUnit
+MemCell	.\MemCell.h	/^class MemCell {$/;"	c
+MemCellType	.\typedef.h	/^	enum MemCellType {$/;"	g	namespace:Type
+MultilevelSAEncoder	.\MultilevelSAEncoder.cpp	/^MultilevelSAEncoder::MultilevelSAEncoder(const InputParameter& _inputParameter, const Technology& _tech, const MemCell& _cell): inputParameter(_inputParameter), tech(_tech), cell(_cell), FunctionUnit() {$/;"	f	class:MultilevelSAEncoder
+MultilevelSAEncoder	.\MultilevelSAEncoder.h	/^class MultilevelSAEncoder: public FunctionUnit {$/;"	c
+MultilevelSAEncoder_H_	.\MultilevelSAEncoder.h	40;"	d
+MultilevelSenseAmp	.\MultilevelSenseAmp.cpp	/^MultilevelSenseAmp::MultilevelSenseAmp(const InputParameter& _inputParameter, const Technology& _tech, const MemCell& _cell): inputParameter(_inputParameter), tech(_tech), cell(_cell), currentSenseAmp(_inputParameter, _tech, _cell), FunctionUnit() {$/;"	f	class:MultilevelSenseAmp
+MultilevelSenseAmp	.\MultilevelSenseAmp.h	/^class MultilevelSenseAmp: public FunctionUnit {$/;"	c
+Mux	.\Mux.cpp	/^Mux::Mux(const InputParameter& _inputParameter, const Technology& _tech, const MemCell& _cell): inputParameter(_inputParameter), tech(_tech), cell(_cell), FunctionUnit() {$/;"	f	class:Mux
+Mux	.\Mux.h	/^class Mux: public FunctionUnit {$/;"	c
+NAND	.\constant.h	44;"	d
+NEUROSIM_FORMULA_H_	.\formula.h	40;"	d
+NEWSWITCHMATRIX_H_	.\NewSwitchMatrix.h	40;"	d
+NMOS	.\constant.h	46;"	d
+NONE	.\typedef.h	/^	NONE,		\/* No action, just use the original area calculation *\/$/;"	e	enum:AreaModify
+NONSPIKING	.\typedef.h	/^	NONSPIKING,	\/* Binary format *\/$/;"	e	enum:SpikingMode
+NOR	.\constant.h	43;"	d
+NewSwitchMatrix	.\NewSwitchMatrix.cpp	/^NewSwitchMatrix::NewSwitchMatrix(const InputParameter& _inputParameter, const Technology& _tech, const MemCell& _cell): inputParameter(_inputParameter), tech(_tech), cell(_cell), dff(_inputParameter, _tech, _cell), FunctionUnit() {$/;"	f	class:NewSwitchMatrix
+NewSwitchMatrix	.\NewSwitchMatrix.h	/^class NewSwitchMatrix: public FunctionUnit {$/;"	c
+NonlinearResistance	.\formula.cpp	/^double NonlinearResistance(double R, double NL, double Vw, double Vr, double V) {	\/\/ Nonlinearity is the current ratio between Vw and V, and R means the resistance at Vr$/;"	f
+OSCILLATION	.\typedef.h	/^	OSCILLATION	\/* NbO2 *\/$/;"	e	enum:ReadCircuitMode
+OVERRIDE	.\typedef.h	/^	OVERRIDE	\/* directly modify the height and width and calculate new area *\/$/;"	e	enum:AreaModify
+OverrideLayout	.\FunctionUnit.cpp	/^void FunctionUnit::OverrideLayout() {$/;"	f	class:FunctionUnit
+PMOS	.\constant.h	47;"	d
+POLY_WIDTH	.\constant.h	62;"	d
+PRECHARGER_H_	.\Precharger.h	40;"	d
+PitchFin	.\Technology.h	/^	double PitchFin;	\/* Fin pitch, Unit: m *\/$/;"	m	class:Technology
+Precharger	.\Precharger.cpp	/^Precharger::Precharger(const InputParameter& _inputParameter, const Technology& _tech, const MemCell& _cell): inputParameter(_inputParameter), tech(_tech), cell(_cell), FunctionUnit() {$/;"	f	class:Precharger
+Precharger	.\Precharger.h	/^class Precharger: public FunctionUnit {$/;"	c
+PrintProperty	.\Adder.cpp	/^void Adder::PrintProperty(const char* str) {$/;"	f	class:Adder
+PrintProperty	.\Comparator.cpp	/^void Comparator::PrintProperty(const char* str) {$/;"	f	class:Comparator
+PrintProperty	.\CurrentSenseAmp.cpp	/^void CurrentSenseAmp::PrintProperty(const char* str) {$/;"	f	class:CurrentSenseAmp
+PrintProperty	.\DFF.cpp	/^void DFF::PrintProperty(const char* str) {$/;"	f	class:DFF
+PrintProperty	.\DeMux.cpp	/^void DeMux::PrintProperty(const char* str) {$/;"	f	class:DeMux
+PrintProperty	.\DecoderDriver.cpp	/^void DecoderDriver::PrintProperty(const char* str) {$/;"	f	class:DecoderDriver
+PrintProperty	.\FunctionUnit.cpp	/^void FunctionUnit::PrintProperty(const char* str) {$/;"	f	class:FunctionUnit
+PrintProperty	.\LUT.cpp	/^void LUT::PrintProperty(const char* str) {$/;"	f	class:LUT
+PrintProperty	.\MultilevelSAEncoder.cpp	/^void MultilevelSAEncoder::PrintProperty(const char* str) {$/;"	f	class:MultilevelSAEncoder
+PrintProperty	.\MultilevelSenseAmp.cpp	/^void MultilevelSenseAmp::PrintProperty(const char* str) {$/;"	f	class:MultilevelSenseAmp
+PrintProperty	.\Mux.cpp	/^void Mux::PrintProperty(const char* str) {$/;"	f	class:Mux
+PrintProperty	.\NewSwitchMatrix.cpp	/^void NewSwitchMatrix::PrintProperty(const char* str) {$/;"	f	class:NewSwitchMatrix
+PrintProperty	.\Precharger.cpp	/^void Precharger::PrintProperty(const char* str) {$/;"	f	class:Precharger
+PrintProperty	.\ReadCircuit.cpp	/^void ReadCircuit::PrintProperty(const char* str) {$/;"	f	class:ReadCircuit
+PrintProperty	.\RippleCounter.cpp	/^void RippleCounter::PrintProperty(const char* str) {$/;"	f	class:RippleCounter
+PrintProperty	.\RowDecoder.cpp	/^void RowDecoder::PrintProperty(const char* str) {$/;"	f	class:RowDecoder
+PrintProperty	.\SRAMWriteDriver.cpp	/^void SRAMWriteDriver::PrintProperty(const char* str) {$/;"	f	class:SRAMWriteDriver
+PrintProperty	.\SenseAmp.cpp	/^void SenseAmp::PrintProperty(const char* str) {$/;"	f	class:SenseAmp
+PrintProperty	.\ShiftAdd.cpp	/^void ShiftAdd::PrintProperty(const char* str) {$/;"	f	class:ShiftAdd
+PrintProperty	.\SubArray.cpp	/^void SubArray::PrintProperty() {$/;"	f	class:SubArray
+PrintProperty	.\SwitchMatrix.cpp	/^void SwitchMatrix::PrintProperty(const char* str) {$/;"	f	class:SwitchMatrix
+PrintProperty	.\Technology.cpp	/^void Technology::PrintProperty() {$/;"	f	class:Technology
+PrintProperty	.\VoltageSenseAmp.cpp	/^void VoltageSenseAmp::PrintProperty(const char* str) {$/;"	f	class:VoltageSenseAmp
+PrintProperty	.\WLDecoderOutput.cpp	/^void WLDecoderOutput::PrintProperty(const char* str) {$/;"	f	class:WLDecoderOutput
+PrintProperty	.\WLNewDecoderDriver.cpp	/^void WLNewDecoderDriver::PrintProperty(const char* str) {$/;"	f	class:WLNewDecoderDriver
+RATIO_READ_THRESHOLD_VS_VOLTAGE	.\constant.h	81;"	d
+READCIRCUIT_H_	.\ReadCircuit.h	40;"	d
+REGULAR_COL	.\typedef.h	/^	REGULAR_COL,	\/* Regular column mode *\/$/;"	e	enum:DecoderMode
+REGULAR_ROW	.\typedef.h	/^	REGULAR_ROW,	\/* Regular row mode *\/$/;"	e	enum:DecoderMode
+RIPPLECOUNTER_H_	.\RippleCounter.h	40;"	d
+ROWDECODER_H_	.\RowDecoder.h	40;"	d
+ROW_MODE	.\constant.h	83;"	d
+RRAM	.\typedef.h	/^		RRAM$/;"	e	enum:Type::MemCellType
+RRAMFeatureSize	.\Technology.h	/^	double RRAMFeatureSize;	\/* Process feature size of RRAM, Unit: m *\/$/;"	m	class:Technology
+R_OSC_OFF	.\ReadCircuit.h	/^	double Vhold, Vth, Vrow, Vcol, R_OSC_OFF;$/;"	m	class:ReadCircuit
+ReadCircuit	.\ReadCircuit.cpp	/^ReadCircuit::ReadCircuit(const InputParameter& _inputParameter, const Technology& _tech, const MemCell& _cell): inputParameter(_inputParameter), tech(_tech), cell(_cell), FunctionUnit() {$/;"	f	class:ReadCircuit
+ReadCircuit	.\ReadCircuit.h	/^class ReadCircuit: public FunctionUnit {$/;"	c
+ReadCircuitMode	.\typedef.h	/^enum ReadCircuitMode$/;"	g
+ReadWeightMatrix	.\test.cpp	/^void ReadWeightMatrix(string& FileName, int* Row, int* Col,$/;"	f
+ReadWeightMatrixFile	.\DataIO.cpp	/^void ReadWeightMatrixFile(string& FileName, int* Row, int* Col,$/;"	f
+RippleCounter	.\RippleCounter.cpp	/^RippleCounter::RippleCounter(const InputParameter& _inputParameter, const Technology& _tech, const MemCell& _cell): inputParameter(_inputParameter), tech(_tech), cell(_cell), dff(_inputParameter, _tech, _cell), FunctionUnit() {$/;"	f	class:RippleCounter
+RippleCounter	.\RippleCounter.h	/^class RippleCounter: public FunctionUnit {$/;"	c
+RowDecoder	.\RowDecoder.cpp	/^RowDecoder::RowDecoder(const InputParameter& _inputParameter, const Technology& _tech, const MemCell& _cell): inputParameter(_inputParameter), tech(_tech), cell(_cell), FunctionUnit(){$/;"	f	class:RowDecoder
+RowDecoder	.\RowDecoder.h	/^class RowDecoder: public FunctionUnit {$/;"	c
+SENSEAMP_H_	.\SenseAmp.h	40;"	d
+SHIFTADD_H_	.\ShiftAdd.h	40;"	d
+SPIKING	.\typedef.h	/^	SPIKING$/;"	e	enum:SpikingMode
+SRAM	.\LUT.h	/^	bool SRAM;$/;"	m	class:LUT
+SRAM	.\typedef.h	/^		SRAM,$/;"	e	enum:Type::MemCellType
+SRAMWRITEDRIVER_H_	.\SRAMWriteDriver.h	40;"	d
+SRAMWriteDriver	.\SRAMWriteDriver.cpp	/^SRAMWriteDriver::SRAMWriteDriver(const InputParameter& _inputParameter, const Technology& _tech, const MemCell& _cell): inputParameter(_inputParameter), tech(_tech), cell(_cell), FunctionUnit() {$/;"	f	class:SRAMWriteDriver
+SRAMWriteDriver	.\SRAMWriteDriver.h	/^class SRAMWriteDriver: public FunctionUnit {$/;"	c
+SUBARRAY_H_	.\SubArray.h	40;"	d
+SWITCHMATRIX_H_	.\SwitchMatrix.h	40;"	d
+SaveOutput	.\Adder.cpp	/^void Adder::SaveOutput(const char* str) {$/;"	f	class:Adder
+SaveOutput	.\Comparator.cpp	/^void Comparator::SaveOutput(const char* str) {$/;"	f	class:Comparator
+SaveOutput	.\CurrentSenseAmp.cpp	/^void CurrentSenseAmp::SaveOutput(const char* str) {$/;"	f	class:CurrentSenseAmp
+SaveOutput	.\DFF.cpp	/^void DFF::SaveOutput(const char* str) {$/;"	f	class:DFF
+SaveOutput	.\DeMux.cpp	/^void DeMux::SaveOutput(const char* str) {$/;"	f	class:DeMux
+SaveOutput	.\DecoderDriver.cpp	/^void DecoderDriver::SaveOutput(const char* str) {$/;"	f	class:DecoderDriver
+SaveOutput	.\FunctionUnit.cpp	/^void FunctionUnit::SaveOutput(const char* str) {$/;"	f	class:FunctionUnit
+SaveOutput	.\LUT.cpp	/^void LUT::SaveOutput(const char* str) {$/;"	f	class:LUT
+SaveOutput	.\MultilevelSAEncoder.cpp	/^void MultilevelSAEncoder::SaveOutput(const char* str) {$/;"	f	class:MultilevelSAEncoder
+SaveOutput	.\MultilevelSenseAmp.cpp	/^void MultilevelSenseAmp::SaveOutput(const char* str) {$/;"	f	class:MultilevelSenseAmp
+SaveOutput	.\Mux.cpp	/^void Mux::SaveOutput(const char* str) {$/;"	f	class:Mux
+SaveOutput	.\NewSwitchMatrix.cpp	/^void NewSwitchMatrix::SaveOutput(const char* str) {$/;"	f	class:NewSwitchMatrix
+SaveOutput	.\Precharger.cpp	/^void Precharger::SaveOutput(const char* str) {$/;"	f	class:Precharger
+SaveOutput	.\ReadCircuit.cpp	/^void ReadCircuit::SaveOutput(const char* str) {$/;"	f	class:ReadCircuit
+SaveOutput	.\RippleCounter.cpp	/^void RippleCounter::SaveOutput(const char* str) {$/;"	f	class:RippleCounter
+SaveOutput	.\RowDecoder.cpp	/^void RowDecoder::SaveOutput(const char* str) {$/;"	f	class:RowDecoder
+SaveOutput	.\SRAMWriteDriver.cpp	/^void SRAMWriteDriver::SaveOutput(const char* str) {$/;"	f	class:SRAMWriteDriver
+SaveOutput	.\SenseAmp.cpp	/^void SenseAmp::SaveOutput(const char* str) {$/;"	f	class:SenseAmp
+SaveOutput	.\ShiftAdd.cpp	/^void ShiftAdd::SaveOutput(const char* str) {$/;"	f	class:ShiftAdd
+SaveOutput	.\SubArray.cpp	/^void SubArray::SaveOutput() {$/;"	f	class:SubArray
+SaveOutput	.\SwitchMatrix.cpp	/^void SwitchMatrix::SaveOutput(const char* str) {$/;"	f	class:SwitchMatrix
+SaveOutput	.\VoltageSenseAmp.cpp	/^void VoltageSenseAmp::SaveOutput(const char* str) {$/;"	f	class:VoltageSenseAmp
+SaveOutput	.\WLDecoderOutput.cpp	/^void WLDecoderOutput::SaveOutput(const char* str) {$/;"	f	class:WLDecoderOutput
+SaveOutput	.\WLNewDecoderDriver.cpp	/^void WLNewDecoderDriver::SaveOutput(const char* str) {$/;"	f	class:WLNewDecoderDriver
+SenseAmp	.\SenseAmp.cpp	/^SenseAmp::SenseAmp(const InputParameter& _inputParameter, const Technology& _tech, const MemCell& _cell): inputParameter(_inputParameter), tech(_tech), cell(_cell), FunctionUnit() {$/;"	f	class:SenseAmp
+SenseAmp	.\SenseAmp.h	/^class SenseAmp: public FunctionUnit {$/;"	c
+ShiftAdd	.\ShiftAdd.cpp	/^ShiftAdd::ShiftAdd(const InputParameter& _inputParameter, const Technology& _tech, const MemCell& _cell): inputParameter(_inputParameter), tech(_tech), cell(_cell), adder(_inputParameter, _tech, _cell), dff(_inputParameter, _tech, _cell), FunctionUnit() {$/;"	f	class:ShiftAdd
+ShiftAdd	.\ShiftAdd.h	/^class ShiftAdd: public FunctionUnit {$/;"	c
+SpikingMode	.\typedef.h	/^enum SpikingMode$/;"	g
+SubArray	.\SubArray.cpp	/^SubArray::SubArray(InputParameter& _inputParameter, Technology& _tech, MemCell& _cell):$/;"	f	class:SubArray
+SubArray	.\SubArray.h	/^class SubArray: public FunctionUnit {$/;"	c
+SwitchMatrix	.\SwitchMatrix.cpp	/^SwitchMatrix::SwitchMatrix(const InputParameter& _inputParameter, const Technology& _tech, const MemCell& _cell): inputParameter(_inputParameter), tech(_tech), cell(_cell), dff(_inputParameter, _tech, _cell), FunctionUnit() {$/;"	f	class:SwitchMatrix
+SwitchMatrix	.\SwitchMatrix.h	/^class SwitchMatrix: public FunctionUnit {$/;"	c
+TECHNOLOGY_H_	.\Technology.h	40;"	d
+TFET	.\typedef.h	/^	TFET$/;"	e	enum:TransistorType
+TYPEDEF_H_	.\typedef.h	40;"	d
+Technology	.\Technology.cpp	/^Technology::Technology() {$/;"	f	class:Technology
+Technology	.\Technology.h	/^class Technology {$/;"	c
+TgHeight	.\DecoderDriver.h	/^	double TgHeight, TgWidth;$/;"	m	class:DecoderDriver
+TgHeight	.\NewSwitchMatrix.h	/^	double TgHeight, TgWidth;$/;"	m	class:NewSwitchMatrix
+TgHeight	.\SwitchMatrix.h	/^	double TgHeight, TgWidth;$/;"	m	class:SwitchMatrix
+TgWidth	.\DecoderDriver.h	/^	double TgHeight, TgWidth;$/;"	m	class:DecoderDriver
+TgWidth	.\Mux.h	/^	double TgWidth;$/;"	m	class:Mux
+TgWidth	.\NewSwitchMatrix.h	/^	double TgHeight, TgWidth;$/;"	m	class:NewSwitchMatrix
+TgWidth	.\SwitchMatrix.h	/^	double TgHeight, TgWidth;$/;"	m	class:SwitchMatrix
+TransistorType	.\typedef.h	/^enum TransistorType$/;"	g
+Type	.\typedef.h	/^namespace Type {	\/\/ To prevent name collision$/;"	n
+VOLTAGESENSEAMP_H_	.\VoltageSenseAmp.h	40;"	d
+Vcol	.\ReadCircuit.h	/^	double Vhold, Vth, Vrow, Vcol, R_OSC_OFF;$/;"	m	class:ReadCircuit
+Vhold	.\ReadCircuit.h	/^	double Vhold, Vth, Vrow, Vcol, R_OSC_OFF;$/;"	m	class:ReadCircuit
+VoltageSenseAmp	.\VoltageSenseAmp.cpp	/^VoltageSenseAmp::VoltageSenseAmp(const InputParameter& _inputParameter, const Technology& _tech, const MemCell& _cell): inputParameter(_inputParameter), tech(_tech), cell(_cell), FunctionUnit() {$/;"	f	class:VoltageSenseAmp
+VoltageSenseAmp	.\VoltageSenseAmp.h	/^class VoltageSenseAmp: public FunctionUnit {$/;"	c
+Vrow	.\ReadCircuit.h	/^	double Vhold, Vth, Vrow, Vcol, R_OSC_OFF;$/;"	m	class:ReadCircuit
+Vth	.\ReadCircuit.h	/^	double Vhold, Vth, Vrow, Vcol, R_OSC_OFF;$/;"	m	class:ReadCircuit
+WLDecoderOutput	.\WLDecoderOutput.cpp	/^WLDecoderOutput::WLDecoderOutput(const InputParameter& _inputParameter, const Technology& _tech, const MemCell& _cell): inputParameter(_inputParameter), tech(_tech), cell(_cell), FunctionUnit(){$/;"	f	class:WLDecoderOutput
+WLDecoderOutput	.\WLDecoderOutput.h	/^class WLDecoderOutput: public FunctionUnit {$/;"	c
+WLDecoderOutput_H_	.\WLDecoderOutput.h	40;"	d
+WLNewDecoderDriver	.\WLNewDecoderDriver.cpp	/^WLNewDecoderDriver::WLNewDecoderDriver(const InputParameter& _inputParameter, const Technology& _tech, const MemCell& _cell): inputParameter(_inputParameter), tech(_tech), cell(_cell), FunctionUnit(){$/;"	f	class:WLNewDecoderDriver
+WLNewDecoderDriver	.\WLNewDecoderDriver.h	/^class WLNewDecoderDriver : public FunctionUnit {$/;"	c
+WLNewDecoderDriver_H_	.\WLNewDecoderDriver.h	2;"	d
+W_SENSE_EN	.\constant.h	74;"	d
+W_SENSE_ISO	.\constant.h	73;"	d
+W_SENSE_MUX	.\constant.h	75;"	d
+W_SENSE_N	.\constant.h	72;"	d
+W_SENSE_P	.\constant.h	71;"	d
+XNORModeDoubleEnded	.\SubArray.h	/^	bool XNORModeDoubleEnded;      \/\/ XNOR Double-ended mode using parallel RRAM$/;"	m	class:SubArray
+XNORModeSingleEnded	.\SubArray.h	/^	bool XNORModeSingleEnded;      \/\/ XNOR Single-ended mode using parallel RRAM$/;"	m	class:SubArray
+_MEMCELL_H_	.\MemCell.h	40;"	d
+accessType	.\MemCell.h	/^	CellAccessType accessType;	\/* Cell access type: CMOS, BJT, or diode *\/$/;"	m	class:MemCell
+accessVoltage	.\MemCell.h	/^	double accessVoltage;$/;"	m	class:MemCell
+activityColWrite	.\NewSwitchMatrix.h	/^	double activityColWrite;$/;"	m	class:NewSwitchMatrix
+activityColWrite	.\Precharger.h	/^	double activityColWrite;$/;"	m	class:Precharger
+activityColWrite	.\SRAMWriteDriver.h	/^	double activityColWrite;$/;"	m	class:SRAMWriteDriver
+activityColWrite	.\SubArray.h	/^	double activityColWrite;	\/\/ Activity for # of columns in the write$/;"	m	class:SubArray
+activityColWrite	.\SwitchMatrix.h	/^	double activityColWrite;$/;"	m	class:SwitchMatrix
+activityRowRead	.\NewSwitchMatrix.h	/^	double activityRowRead;$/;"	m	class:NewSwitchMatrix
+activityRowRead	.\SubArray.h	/^	double activityRowRead;		\/\/ Activity for # of rows in the read$/;"	m	class:SubArray
+activityRowRead	.\SwitchMatrix.h	/^	double activityRowRead;$/;"	m	class:SwitchMatrix
+activityRowWrite	.\SubArray.h	/^	double activityRowWrite;	\/\/ Activity for # of rows in the write$/;"	m	class:SubArray
+adder	.\ShiftAdd.h	/^	Adder adder;$/;"	m	class:ShiftAdd
+adder	.\SubArray.h	/^	Adder adder;$/;"	m	class:SubArray
+area	.\FunctionUnit.h	/^	double area;		\/* Unit: m^2 *\/$/;"	m	class:FunctionUnit
+area	.\MemCell.h	/^	double area;			\/* Cell area, Unit: F^2 *\/$/;"	m	class:MemCell
+areaArray	.\SubArray.h	/^	double areaArray;$/;"	m	class:SubArray
+areaDff	.\ReadCircuit.h	/^	double areaUnit, hUnit, wUnit, areaReadBody, hReadBody, wReadBody, areaDff, hDff, wDff;$/;"	m	class:ReadCircuit
+areaReadBody	.\ReadCircuit.h	/^	double areaUnit, hUnit, wUnit, areaReadBody, hReadBody, wReadBody, areaDff, hDff, wDff;$/;"	m	class:ReadCircuit
+areaUnit	.\Comparator.h	/^    double areaUnit;$/;"	m	class:Comparator
+areaUnit	.\CurrentSenseAmp.h	/^	double areaUnit;$/;"	m	class:CurrentSenseAmp
+areaUnit	.\ReadCircuit.h	/^	double areaUnit, hUnit, wUnit, areaReadBody, hReadBody, wReadBody, areaDff, hDff, wDff;$/;"	m	class:ReadCircuit
+areaUnit	.\VoltageSenseAmp.h	/^	double areaUnit;$/;"	m	class:VoltageSenseAmp
+arrayColSize	.\main.cpp	/^extern const int arrayColSize = 64;    \/\/ Synapse Array Column Size$/;"	v
+arrayRowSize	.\main.cpp	/^extern const int arrayRowSize = 10;    \/\/ Synapse Array Row Size$/;"	v
+aspectRatio	.\MemCell.h	/^	double aspectRatio;		\/* Cell aspect ratio, H\/W *\/$/;"	m	class:MemCell
+avgWeightBit	.\SubArray.h	/^	int avgWeightBit;		\/\/ Average weight for each synapse (value can range from 0 to numCellPerSynapse)$/;"	m	class:SubArray
+backToBack	.\SubArray.h	/^	bool backToBack;    \/\/ Parameter for FPGA Mux (2 Mux triangles can combine into a Mux rectangle)$/;"	m	class:SubArray
+blSwitchMatrix	.\SubArray.h	/^	SwitchMatrix    blSwitchMatrix;$/;"	m	class:SubArray
+buildInPotential	.\Technology.h	/^	double buildInPotential;	\/* Bottom junction built-in potential(PB in BSIM4 model), Unit: V *\/	$/;"	m	class:Technology
+capCellAccess	.\SubArray.h	/^	double capCellAccess;	\/\/ Capacitance of access device, Unit: ohm$/;"	m	class:SubArray
+capCol	.\SubArray.h	/^	double capCol;		\/\/ Capacitance of column, Unit: F$/;"	m	class:SubArray
+capDffInvInput	.\ReadCircuit.h	/^	double capDffTgGateN, capDffTgGateP, capDffTgDrain, capDffInvInput, capDffInvOutput, capNorInput, capNorOutput;$/;"	m	class:ReadCircuit
+capDffInvOutput	.\ReadCircuit.h	/^	double capDffTgGateN, capDffTgGateP, capDffTgDrain, capDffInvInput, capDffInvOutput, capNorInput, capNorOutput;$/;"	m	class:ReadCircuit
+capDffTgDrain	.\ReadCircuit.h	/^	double capDffTgGateN, capDffTgGateP, capDffTgDrain, capDffInvInput, capDffInvOutput, capNorInput, capNorOutput;$/;"	m	class:ReadCircuit
+capDffTgGateN	.\ReadCircuit.h	/^	double capDffTgGateN, capDffTgGateP, capDffTgDrain, capDffInvInput, capDffInvOutput, capNorInput, capNorOutput;$/;"	m	class:ReadCircuit
+capDffTgGateP	.\ReadCircuit.h	/^	double capDffTgGateN, capDffTgGateP, capDffTgDrain, capDffInvInput, capDffInvOutput, capNorInput, capNorOutput;$/;"	m	class:ReadCircuit
+capDrainToChannel	.\Technology.h	/^	double capDrainToChannel;	\/* Junction drain to channel capacitance, Cjswg, Unit: F\/m *\/$/;"	m	class:Technology
+capDriverInvInput	.\RowDecoder.h	/^	double capInvInput, capInvOutput, capNandInput, capNandOutput, capNorInput, capNorOutput, capDriverInvInput, capDriverInvOutput;$/;"	m	class:RowDecoder
+capDriverInvOutput	.\RowDecoder.h	/^	double capInvInput, capInvOutput, capNandInput, capNandOutput, capNorInput, capNorOutput, capDriverInvInput, capDriverInvOutput;$/;"	m	class:RowDecoder
+capEnInvInput	.\Mux.h	/^	double capNandInput, capNandOutput, capEnInvInput, capEnInvOutput, capMuxInvInput, capMuxInvOutput, capTgGateN, capTgGateP, capTgDrain;$/;"	m	class:Mux
+capEnInvOutput	.\Mux.h	/^	double capNandInput, capNandOutput, capEnInvInput, capEnInvOutput, capMuxInvInput, capMuxInvOutput, capTgGateN, capTgGateP, capTgDrain;$/;"	m	class:Mux
+capFringe	.\Technology.h	/^	double capFringe;		\/* Fringe capacitance, Unit: F\/m *\/$/;"	m	class:Technology
+capIdealGate	.\Technology.h	/^	double capIdealGate;	\/* Ideal gate capacitance, Unit: F\/m *\/$/;"	m	class:Technology
+capInput	.\ReadCircuit.h	/^	double capInput;$/;"	m	class:ReadCircuit
+capInvInput	.\Comparator.h	/^	double capInvInput, capInvOutput, capNand2Input, capNand2Output, capNand3Input, capNand3Output;$/;"	m	class:Comparator
+capInvInput	.\DFF.h	/^	double capTgDrain, capTgGateN, capTgGateP, capInvInput, capInvOutput;$/;"	m	class:DFF
+capInvInput	.\DeMux.h	/^	double capInvInput, capInvOutput, capTgDrain, capTgGateN, capTgGateP;$/;"	m	class:DeMux
+capInvInput	.\DecoderDriver.h	/^	double capInvInput, capInvOutput, capTgDrain, capTgGateN, capTgGateP;$/;"	m	class:DecoderDriver
+capInvInput	.\MultilevelSAEncoder.h	/^	double capNandInput, capNandOutput, capNandLgInput, capNandLgOutput, capInvInput, capInvOutput;$/;"	m	class:MultilevelSAEncoder
+capInvInput	.\ReadCircuit.h	/^	double capTgGateN, capTgGateP, capTgDrain, capNmosGate, capNmosDrain, capPmosGate, capPmosDrain, capInvInput, capInvOutput;$/;"	m	class:ReadCircuit
+capInvInput	.\RowDecoder.h	/^	double capInvInput, capInvOutput, capNandInput, capNandOutput, capNorInput, capNorOutput, capDriverInvInput, capDriverInvOutput;$/;"	m	class:RowDecoder
+capInvInput	.\SRAMWriteDriver.h	/^	double capInvInput, capInvOutput;$/;"	m	class:SRAMWriteDriver
+capInvInput	.\WLDecoderOutput.h	/^	double capNorInput, capNorOutput, capInvInput, capInvOutput, capTgGateN, capTgGateP, capTgDrain, capNmosGate, capNmosDrain;$/;"	m	class:WLDecoderOutput
+capInvInput	.\WLNewDecoderDriver.h	/^	double capNandInput, capNandOutput, capInvInput, capInvOutput, capTgGateN, capTgGateP, capTgDrain;$/;"	m	class:WLNewDecoderDriver
+capInvOutput	.\Comparator.h	/^	double capInvInput, capInvOutput, capNand2Input, capNand2Output, capNand3Input, capNand3Output;$/;"	m	class:Comparator
+capInvOutput	.\DFF.h	/^	double capTgDrain, capTgGateN, capTgGateP, capInvInput, capInvOutput;$/;"	m	class:DFF
+capInvOutput	.\DeMux.h	/^	double capInvInput, capInvOutput, capTgDrain, capTgGateN, capTgGateP;$/;"	m	class:DeMux
+capInvOutput	.\DecoderDriver.h	/^	double capInvInput, capInvOutput, capTgDrain, capTgGateN, capTgGateP;$/;"	m	class:DecoderDriver
+capInvOutput	.\MultilevelSAEncoder.h	/^	double capNandInput, capNandOutput, capNandLgInput, capNandLgOutput, capInvInput, capInvOutput;$/;"	m	class:MultilevelSAEncoder
+capInvOutput	.\ReadCircuit.h	/^	double capTgGateN, capTgGateP, capTgDrain, capNmosGate, capNmosDrain, capPmosGate, capPmosDrain, capInvInput, capInvOutput;$/;"	m	class:ReadCircuit
+capInvOutput	.\RowDecoder.h	/^	double capInvInput, capInvOutput, capNandInput, capNandOutput, capNorInput, capNorOutput, capDriverInvInput, capDriverInvOutput;$/;"	m	class:RowDecoder
+capInvOutput	.\SRAMWriteDriver.h	/^	double capInvInput, capInvOutput;$/;"	m	class:SRAMWriteDriver
+capInvOutput	.\WLDecoderOutput.h	/^	double capNorInput, capNorOutput, capInvInput, capInvOutput, capTgGateN, capTgGateP, capTgDrain, capNmosGate, capNmosDrain;$/;"	m	class:WLDecoderOutput
+capInvOutput	.\WLNewDecoderDriver.h	/^	double capNandInput, capNandOutput, capInvInput, capInvOutput, capTgGateN, capTgGateP, capTgDrain;$/;"	m	class:WLNewDecoderDriver
+capJunction	.\Technology.h	/^	double capJunction;		\/* Junction bottom capacitance, Cj0, Unit: F\/m^2 *\/$/;"	m	class:Technology
+capLoad	.\Adder.h	/^	double capLoad;$/;"	m	class:Adder
+capLoad	.\Comparator.h	/^	double capLoad;$/;"	m	class:Comparator
+capLoad	.\LUT.h	/^	double capSRAMCell, capLoad;$/;"	m	class:LUT
+capLoad	.\Mux.h	/^	double capLoad;$/;"	m	class:Mux
+capLoad	.\NewSwitchMatrix.h	/^	double capLoad;$/;"	m	class:NewSwitchMatrix
+capLoad	.\Precharger.h	/^	double capLoad, resLoad;$/;"	m	class:Precharger
+capLoad	.\SRAMWriteDriver.h	/^	double capLoad, resLoad;$/;"	m	class:SRAMWriteDriver
+capLoad	.\SenseAmp.h	/^	double capLoad;			\/* Load capacitance of sense amplifier *\/$/;"	m	class:SenseAmp
+capLoad	.\SwitchMatrix.h	/^	double capLoad;$/;"	m	class:SwitchMatrix
+capLoad	.\WLDecoderOutput.h	/^	double capLoad;	\/* Output capacitance, unit: F *\/$/;"	m	class:WLDecoderOutput
+capLoad	.\WLNewDecoderDriver.h	/^	double capLoad;	\/* Output capacitance, unit: F *\/$/;"	m	class:WLNewDecoderDriver
+capLoad1	.\DecoderDriver.h	/^	double capLoad1, capLoad2;	\/* Output capacitance, unit: F *\/$/;"	m	class:DecoderDriver
+capLoad1	.\RowDecoder.h	/^	double capLoad1;	\/\/ REGULAR: general capLoad, MUX: the NMOS Tg gates$/;"	m	class:RowDecoder
+capLoad2	.\DecoderDriver.h	/^	double capLoad1, capLoad2;	\/* Output capacitance, unit: F *\/$/;"	m	class:DecoderDriver
+capLoad2	.\RowDecoder.h	/^	double capLoad2;	\/\/ MUX: the PMOS Tg gates$/;"	m	class:RowDecoder
+capLoadPerColumn	.\Precharger.h	/^	double capLoadPerColumn;$/;"	m	class:Precharger
+capMuxInvInput	.\Mux.h	/^	double capNandInput, capNandOutput, capEnInvInput, capEnInvOutput, capMuxInvInput, capMuxInvOutput, capTgGateN, capTgGateP, capTgDrain;$/;"	m	class:Mux
+capMuxInvOutput	.\Mux.h	/^	double capNandInput, capNandOutput, capEnInvInput, capEnInvOutput, capMuxInvInput, capMuxInvOutput, capTgGateN, capTgGateP, capTgDrain;$/;"	m	class:Mux
+capNand2Input	.\Comparator.h	/^	double capInvInput, capInvOutput, capNand2Input, capNand2Output, capNand3Input, capNand3Output;$/;"	m	class:Comparator
+capNand2Output	.\Comparator.h	/^	double capInvInput, capInvOutput, capNand2Input, capNand2Output, capNand3Input, capNand3Output;$/;"	m	class:Comparator
+capNand3Input	.\Comparator.h	/^	double capInvInput, capInvOutput, capNand2Input, capNand2Output, capNand3Input, capNand3Output;$/;"	m	class:Comparator
+capNand3Output	.\Comparator.h	/^	double capInvInput, capInvOutput, capNand2Input, capNand2Output, capNand3Input, capNand3Output;$/;"	m	class:Comparator
+capNandInput	.\Adder.h	/^	double capNandInput, capNandOutput;$/;"	m	class:Adder
+capNandInput	.\MultilevelSAEncoder.h	/^	double capNandInput, capNandOutput, capNandLgInput, capNandLgOutput, capInvInput, capInvOutput;$/;"	m	class:MultilevelSAEncoder
+capNandInput	.\Mux.h	/^	double capNandInput, capNandOutput, capEnInvInput, capEnInvOutput, capMuxInvInput, capMuxInvOutput, capTgGateN, capTgGateP, capTgDrain;$/;"	m	class:Mux
+capNandInput	.\RowDecoder.h	/^	double capInvInput, capInvOutput, capNandInput, capNandOutput, capNorInput, capNorOutput, capDriverInvInput, capDriverInvOutput;$/;"	m	class:RowDecoder
+capNandInput	.\WLNewDecoderDriver.h	/^	double capNandInput, capNandOutput, capInvInput, capInvOutput, capTgGateN, capTgGateP, capTgDrain;$/;"	m	class:WLNewDecoderDriver
+capNandLgInput	.\MultilevelSAEncoder.h	/^	double capNandInput, capNandOutput, capNandLgInput, capNandLgOutput, capInvInput, capInvOutput;$/;"	m	class:MultilevelSAEncoder
+capNandLgOutput	.\MultilevelSAEncoder.h	/^	double capNandInput, capNandOutput, capNandLgInput, capNandLgOutput, capInvInput, capInvOutput;$/;"	m	class:MultilevelSAEncoder
+capNandOutput	.\Adder.h	/^	double capNandInput, capNandOutput;$/;"	m	class:Adder
+capNandOutput	.\MultilevelSAEncoder.h	/^	double capNandInput, capNandOutput, capNandLgInput, capNandLgOutput, capInvInput, capInvOutput;$/;"	m	class:MultilevelSAEncoder
+capNandOutput	.\Mux.h	/^	double capNandInput, capNandOutput, capEnInvInput, capEnInvOutput, capMuxInvInput, capMuxInvOutput, capTgGateN, capTgGateP, capTgDrain;$/;"	m	class:Mux
+capNandOutput	.\RowDecoder.h	/^	double capInvInput, capInvOutput, capNandInput, capNandOutput, capNorInput, capNorOutput, capDriverInvInput, capDriverInvOutput;$/;"	m	class:RowDecoder
+capNandOutput	.\WLNewDecoderDriver.h	/^	double capNandInput, capNandOutput, capInvInput, capInvOutput, capTgGateN, capTgGateP, capTgDrain;$/;"	m	class:WLNewDecoderDriver
+capNmosDrain	.\ReadCircuit.h	/^	double capTgGateN, capTgGateP, capTgDrain, capNmosGate, capNmosDrain, capPmosGate, capPmosDrain, capInvInput, capInvOutput;$/;"	m	class:ReadCircuit
+capNmosDrain	.\VoltageSenseAmp.h	/^	double capNmosGate, capNmosDrain, capPmosGate, capPmosDrain;$/;"	m	class:VoltageSenseAmp
+capNmosDrain	.\WLDecoderOutput.h	/^	double capNorInput, capNorOutput, capInvInput, capInvOutput, capTgGateN, capTgGateP, capTgDrain, capNmosGate, capNmosDrain;$/;"	m	class:WLDecoderOutput
+capNmosGate	.\ReadCircuit.h	/^	double capTgGateN, capTgGateP, capTgDrain, capNmosGate, capNmosDrain, capPmosGate, capPmosDrain, capInvInput, capInvOutput;$/;"	m	class:ReadCircuit
+capNmosGate	.\VoltageSenseAmp.h	/^	double capNmosGate, capNmosDrain, capPmosGate, capPmosDrain;$/;"	m	class:VoltageSenseAmp
+capNmosGate	.\WLDecoderOutput.h	/^	double capNorInput, capNorOutput, capInvInput, capInvOutput, capTgGateN, capTgGateP, capTgDrain, capNmosGate, capNmosDrain;$/;"	m	class:WLDecoderOutput
+capNorInput	.\ReadCircuit.h	/^	double capDffTgGateN, capDffTgGateP, capDffTgDrain, capDffInvInput, capDffInvOutput, capNorInput, capNorOutput;$/;"	m	class:ReadCircuit
+capNorInput	.\RowDecoder.h	/^	double capInvInput, capInvOutput, capNandInput, capNandOutput, capNorInput, capNorOutput, capDriverInvInput, capDriverInvOutput;$/;"	m	class:RowDecoder
+capNorInput	.\WLDecoderOutput.h	/^	double capNorInput, capNorOutput, capInvInput, capInvOutput, capTgGateN, capTgGateP, capTgDrain, capNmosGate, capNmosDrain;$/;"	m	class:WLDecoderOutput
+capNorOutput	.\ReadCircuit.h	/^	double capDffTgGateN, capDffTgGateP, capDffTgDrain, capDffInvInput, capDffInvOutput, capNorInput, capNorOutput;$/;"	m	class:ReadCircuit
+capNorOutput	.\RowDecoder.h	/^	double capInvInput, capInvOutput, capNandInput, capNandOutput, capNorInput, capNorOutput, capDriverInvInput, capDriverInvOutput;$/;"	m	class:RowDecoder
+capNorOutput	.\WLDecoderOutput.h	/^	double capNorInput, capNorOutput, capInvInput, capInvOutput, capTgGateN, capTgGateP, capTgDrain, capNmosGate, capNmosDrain;$/;"	m	class:WLDecoderOutput
+capOutputBitlinePrecharger	.\Precharger.h	/^	double capOutputBitlinePrecharger;$/;"	m	class:Precharger
+capOverlap	.\Technology.h	/^	double capOverlap;		\/* Overlap capacitance, Cover in MASTAR, Unit: F\/m *\/$/;"	m	class:Technology
+capPmosDrain	.\ReadCircuit.h	/^	double capTgGateN, capTgGateP, capTgDrain, capNmosGate, capNmosDrain, capPmosGate, capPmosDrain, capInvInput, capInvOutput;$/;"	m	class:ReadCircuit
+capPmosDrain	.\VoltageSenseAmp.h	/^	double capNmosGate, capNmosDrain, capPmosGate, capPmosDrain;$/;"	m	class:VoltageSenseAmp
+capPmosGate	.\ReadCircuit.h	/^	double capTgGateN, capTgGateP, capTgDrain, capNmosGate, capNmosDrain, capPmosGate, capPmosDrain, capInvInput, capInvOutput;$/;"	m	class:ReadCircuit
+capPmosGate	.\VoltageSenseAmp.h	/^	double capNmosGate, capNmosDrain, capPmosGate, capPmosDrain;$/;"	m	class:VoltageSenseAmp
+capPolywire	.\Technology.h	/^	double capPolywire;	\/* Poly wire capacitance, Unit: F\/m *\/$/;"	m	class:Technology
+capRow1	.\SubArray.h	/^	double capRow1;		\/\/ Capacitance of row1 (BL for 1T1R, WL for Cross-point), Unit: F$/;"	m	class:SubArray
+capRow2	.\SubArray.h	/^	double capRow2;		\/\/ Capacitance of row2 (WL for 1T1R), Unit: F$/;"	m	class:SubArray
+capS1	.\VoltageSenseAmp.h	/^	double capS1;$/;"	m	class:VoltageSenseAmp
+capSRAMCell	.\LUT.h	/^	double capSRAMCell, capLoad;$/;"	m	class:LUT
+capSRAMCell	.\MemCell.h	/^	double capSRAMCell;$/;"	m	class:MemCell
+capSidewall	.\Technology.h	/^	double capSidewall;		\/* Junction sidewall capacitance, Cjsw, Unit: F\/m *\/$/;"	m	class:Technology
+capTgDrain	.\DFF.h	/^	double capTgDrain, capTgGateN, capTgGateP, capInvInput, capInvOutput;$/;"	m	class:DFF
+capTgDrain	.\DeMux.h	/^	double capInvInput, capInvOutput, capTgDrain, capTgGateN, capTgGateP;$/;"	m	class:DeMux
+capTgDrain	.\DecoderDriver.h	/^	double capInvInput, capInvOutput, capTgDrain, capTgGateN, capTgGateP;$/;"	m	class:DecoderDriver
+capTgDrain	.\Mux.h	/^	double capNandInput, capNandOutput, capEnInvInput, capEnInvOutput, capMuxInvInput, capMuxInvOutput, capTgGateN, capTgGateP, capTgDrain;$/;"	m	class:Mux
+capTgDrain	.\NewSwitchMatrix.h	/^	double capTgDrain, capTgGateN, capTgGateP;$/;"	m	class:NewSwitchMatrix
+capTgDrain	.\ReadCircuit.h	/^	double capTgGateN, capTgGateP, capTgDrain, capNmosGate, capNmosDrain, capPmosGate, capPmosDrain, capInvInput, capInvOutput;$/;"	m	class:ReadCircuit
+capTgDrain	.\SwitchMatrix.h	/^	double capTgDrain, capTgGateN, capTgGateP;$/;"	m	class:SwitchMatrix
+capTgDrain	.\WLDecoderOutput.h	/^	double capNorInput, capNorOutput, capInvInput, capInvOutput, capTgGateN, capTgGateP, capTgDrain, capNmosGate, capNmosDrain;$/;"	m	class:WLDecoderOutput
+capTgDrain	.\WLNewDecoderDriver.h	/^	double capNandInput, capNandOutput, capInvInput, capInvOutput, capTgGateN, capTgGateP, capTgDrain;$/;"	m	class:WLNewDecoderDriver
+capTgGateN	.\DFF.h	/^	double capTgDrain, capTgGateN, capTgGateP, capInvInput, capInvOutput;$/;"	m	class:DFF
+capTgGateN	.\DeMux.h	/^	double capInvInput, capInvOutput, capTgDrain, capTgGateN, capTgGateP;$/;"	m	class:DeMux
+capTgGateN	.\DecoderDriver.h	/^	double capInvInput, capInvOutput, capTgDrain, capTgGateN, capTgGateP;$/;"	m	class:DecoderDriver
+capTgGateN	.\Mux.h	/^	double capNandInput, capNandOutput, capEnInvInput, capEnInvOutput, capMuxInvInput, capMuxInvOutput, capTgGateN, capTgGateP, capTgDrain;$/;"	m	class:Mux
+capTgGateN	.\NewSwitchMatrix.h	/^	double capTgDrain, capTgGateN, capTgGateP;$/;"	m	class:NewSwitchMatrix
+capTgGateN	.\ReadCircuit.h	/^	double capTgGateN, capTgGateP, capTgDrain, capNmosGate, capNmosDrain, capPmosGate, capPmosDrain, capInvInput, capInvOutput;$/;"	m	class:ReadCircuit
+capTgGateN	.\SwitchMatrix.h	/^	double capTgDrain, capTgGateN, capTgGateP;$/;"	m	class:SwitchMatrix
+capTgGateN	.\WLDecoderOutput.h	/^	double capNorInput, capNorOutput, capInvInput, capInvOutput, capTgGateN, capTgGateP, capTgDrain, capNmosGate, capNmosDrain;$/;"	m	class:WLDecoderOutput
+capTgGateN	.\WLNewDecoderDriver.h	/^	double capNandInput, capNandOutput, capInvInput, capInvOutput, capTgGateN, capTgGateP, capTgDrain;$/;"	m	class:WLNewDecoderDriver
+capTgGateP	.\DFF.h	/^	double capTgDrain, capTgGateN, capTgGateP, capInvInput, capInvOutput;$/;"	m	class:DFF
+capTgGateP	.\DeMux.h	/^	double capInvInput, capInvOutput, capTgDrain, capTgGateN, capTgGateP;$/;"	m	class:DeMux
+capTgGateP	.\DecoderDriver.h	/^	double capInvInput, capInvOutput, capTgDrain, capTgGateN, capTgGateP;$/;"	m	class:DecoderDriver
+capTgGateP	.\Mux.h	/^	double capNandInput, capNandOutput, capEnInvInput, capEnInvOutput, capMuxInvInput, capMuxInvOutput, capTgGateN, capTgGateP, capTgDrain;$/;"	m	class:Mux
+capTgGateP	.\NewSwitchMatrix.h	/^	double capTgDrain, capTgGateN, capTgGateP;$/;"	m	class:NewSwitchMatrix
+capTgGateP	.\ReadCircuit.h	/^	double capTgGateN, capTgGateP, capTgDrain, capNmosGate, capNmosDrain, capPmosGate, capPmosDrain, capInvInput, capInvOutput;$/;"	m	class:ReadCircuit
+capTgGateP	.\SwitchMatrix.h	/^	double capTgDrain, capTgGateN, capTgGateP;$/;"	m	class:SwitchMatrix
+capTgGateP	.\WLDecoderOutput.h	/^	double capNorInput, capNorOutput, capInvInput, capInvOutput, capTgGateN, capTgGateP, capTgDrain, capNmosGate, capNmosDrain;$/;"	m	class:WLDecoderOutput
+capTgGateP	.\WLNewDecoderDriver.h	/^	double capNandInput, capNandOutput, capInvInput, capInvOutput, capTgGateN, capTgGateP, capTgDrain;$/;"	m	class:WLNewDecoderDriver
+capWireLoadPerColumn	.\Precharger.h	/^	double capWireLoadPerColumn, resWireLoadPerColumn;$/;"	m	class:Precharger
+cell	.\Adder.h	/^	const MemCell& cell;$/;"	m	class:Adder
+cell	.\Comparator.h	/^	const MemCell& cell;$/;"	m	class:Comparator
+cell	.\CurrentSenseAmp.h	/^	const MemCell& cell;$/;"	m	class:CurrentSenseAmp
+cell	.\DFF.h	/^	const MemCell& cell;$/;"	m	class:DFF
+cell	.\DeMux.h	/^	const MemCell& cell;$/;"	m	class:DeMux
+cell	.\DecoderDriver.h	/^	const MemCell& cell;$/;"	m	class:DecoderDriver
+cell	.\LUT.h	/^	const MemCell& cell;$/;"	m	class:LUT
+cell	.\MultilevelSAEncoder.h	/^	const MemCell& cell;$/;"	m	class:MultilevelSAEncoder
+cell	.\MultilevelSenseAmp.h	/^	const MemCell& cell;$/;"	m	class:MultilevelSenseAmp
+cell	.\Mux.h	/^	const MemCell& cell;$/;"	m	class:Mux
+cell	.\NewSwitchMatrix.h	/^	const MemCell& cell;$/;"	m	class:NewSwitchMatrix
+cell	.\Precharger.h	/^	const MemCell& cell;$/;"	m	class:Precharger
+cell	.\ReadCircuit.h	/^	const MemCell& cell;$/;"	m	class:ReadCircuit
+cell	.\RippleCounter.h	/^	const MemCell& cell;$/;"	m	class:RippleCounter
+cell	.\RowDecoder.h	/^	const MemCell& cell;$/;"	m	class:RowDecoder
+cell	.\SRAMWriteDriver.h	/^	const MemCell& cell;$/;"	m	class:SRAMWriteDriver
+cell	.\SenseAmp.h	/^	const MemCell& cell;$/;"	m	class:SenseAmp
+cell	.\ShiftAdd.h	/^	const MemCell& cell;$/;"	m	class:ShiftAdd
+cell	.\SubArray.h	/^	MemCell& cell;$/;"	m	class:SubArray
+cell	.\SwitchMatrix.h	/^	const MemCell& cell;$/;"	m	class:SwitchMatrix
+cell	.\VoltageSenseAmp.h	/^	const MemCell& cell;$/;"	m	class:VoltageSenseAmp
+cell	.\WLDecoderOutput.h	/^	const MemCell& cell;$/;"	m	class:WLDecoderOutput
+cell	.\WLNewDecoderDriver.h	/^	const MemCell& cell;$/;"	m	class:WLNewDecoderDriver
+cell	.\calibration.cpp	/^MemCell cell;$/;"	v
+cell	.\main.cpp	/^MemCell cell;$/;"	v
+clkFreq	.\CurrentSenseAmp.h	/^	double clkFreq;$/;"	m	class:CurrentSenseAmp
+clkFreq	.\DFF.h	/^	double clkFreq;$/;"	m	class:DFF
+clkFreq	.\LUT.h	/^	double clkFreq;$/;"	m	class:LUT
+clkFreq	.\MultilevelSenseAmp.h	/^	double clkFreq;$/;"	m	class:MultilevelSenseAmp
+clkFreq	.\NewSwitchMatrix.h	/^	double clkFreq;$/;"	m	class:NewSwitchMatrix
+clkFreq	.\ReadCircuit.h	/^	double clkFreq;$/;"	m	class:ReadCircuit
+clkFreq	.\RippleCounter.h	/^	double clkFreq;$/;"	m	class:RippleCounter
+clkFreq	.\SenseAmp.h	/^	double clkFreq;$/;"	m	class:SenseAmp
+clkFreq	.\ShiftAdd.h	/^	double clkFreq;$/;"	m	class:ShiftAdd
+clkFreq	.\SubArray.h	/^	double clkFreq;			\/\/ Clock frequency (Hz)$/;"	m	class:SubArray
+clkFreq	.\SwitchMatrix.h	/^	double clkFreq;$/;"	m	class:SwitchMatrix
+clkFreq	.\VoltageSenseAmp.h	/^	double clkFreq;$/;"	m	class:VoltageSenseAmp
+colDecoder	.\LUT.h	/^	RowDecoder colDecoder;$/;"	m	class:LUT
+colDecoder	.\SubArray.h	/^	RowDecoder colDecoder;$/;"	m	class:SubArray
+colDecoderDriver	.\LUT.h	/^	DecoderDriver colDecoderDriver;$/;"	m	class:LUT
+colDecoderDriver	.\SubArray.h	/^	DecoderDriver colDecoderDriver;$/;"	m	class:SubArray
+colDelay	.\SubArray.h	/^	double colDelay;	\/\/ Column delay, Unit: s$/;"	m	class:SubArray
+comparator	.\SubArray.h	/^	Comparator comparator;$/;"	m	class:SubArray
+conventional	.\typedef.h	/^	conventional,	\/* conventional CMOS *\/$/;"	e	enum:TransistorType
+currentOffNmos	.\Technology.h	/^	double currentOffNmos[101];	\/* NMOS off current (from 300K to 400K), Unit: A\/m *\/$/;"	m	class:Technology
+currentOffPmos	.\Technology.h	/^	double currentOffPmos[101]; \/* PMOS off current (from 300K to 400K), Unit: A\/m *\/$/;"	m	class:Technology
+currentOnNmos	.\Technology.h	/^	double currentOnNmos[101];		\/* NMOS saturation current, Unit: A\/m *\/$/;"	m	class:Technology
+currentOnPmos	.\Technology.h	/^	double currentOnPmos[101];		\/* PMOS saturation current, Unit: A\/m *\/$/;"	m	class:Technology
+currentSense	.\SenseAmp.h	/^	bool currentSense;		\/* Whether the sensing scheme is current-based *\/$/;"	m	class:SenseAmp
+currentSenseAmp	.\MultilevelSenseAmp.h	/^	CurrentSenseAmp currentSenseAmp;$/;"	m	class:MultilevelSenseAmp
+current_gmNmos	.\Technology.h	/^    double current_gmNmos;		\/* NMOS current at 0.7*vdd for gm calculation, Unit: A\/m\/V*\/ $/;"	m	class:Technology
+current_gmPmos	.\Technology.h	/^    double current_gmPmos;		\/* PMOS current at 0.7*vdd for gm calculation, Unit: A\/m\/V*\/ $/;"	m	class:Technology
+deMux	.\SubArray.h	/^	DeMux   deMux;$/;"	m	class:SubArray
+deviceRoadmap	.\InputParameter.h	/^	DeviceRoadmap deviceRoadmap;	\/* ITRS roadmap: HP or LSTP *\/$/;"	m	class:InputParameter
+deviceRoadmap	.\Technology.h	/^	DeviceRoadmap deviceRoadmap;	\/* HP or LP *\/$/;"	m	class:Technology
+dff	.\NewSwitchMatrix.h	/^	DFF dff;$/;"	m	class:NewSwitchMatrix
+dff	.\RippleCounter.h	/^	DFF dff;$/;"	m	class:RippleCounter
+dff	.\ShiftAdd.h	/^	DFF dff;$/;"	m	class:ShiftAdd
+dff	.\SubArray.h	/^	DFF dff;$/;"	m	class:SubArray
+dff	.\SwitchMatrix.h	/^	DFF dff;$/;"	m	class:SwitchMatrix
+digitalModeNeuro	.\SubArray.h	/^	bool digitalModeNeuro;	\/\/ Digital RRAM in neuro mode$/;"	m	class:SubArray
+diode_access	.\typedef.h	/^	diode_access,$/;"	e	enum:CellAccessType
+effectiveResistanceMultiplier	.\Technology.h	/^	double effectiveResistanceMultiplier;	\/* Extra resistance due to vdsat *\/$/;"	m	class:Technology
+emptyArea	.\FunctionUnit.h	/^	double emptyArea;		\/* Unit: m^2 *\/$/;"	m	class:FunctionUnit
+enableLatency	.\Precharger.h	/^	double enableLatency;$/;"	m	class:Precharger
+featureSize	.\MemCell.h	/^	double featureSize;$/;"	m	class:MemCell
+featureSize	.\Technology.h	/^	double featureSize;	\/* Process feature size, Unit: m *\/$/;"	m	class:Technology
+featureSizeInNano	.\Technology.h	/^	int featureSizeInNano; \/*Process feature size, Unit: nm *\/$/;"	m	class:Technology
+hAdder	.\Adder.h	/^	double hAdder, wAdder;$/;"	m	class:Adder
+hDff	.\ReadCircuit.h	/^	double areaUnit, hUnit, wUnit, areaReadBody, hReadBody, wReadBody, areaDff, hDff, wDff;$/;"	m	class:ReadCircuit
+hNmosL	.\CurrentSenseAmp.h	/^	double hNmosL, wNmosL, hNmosS, wNmosS, hNmosM, wNmosM;$/;"	m	class:CurrentSenseAmp
+hNmosM	.\CurrentSenseAmp.h	/^	double hNmosL, wNmosL, hNmosS, wNmosS, hNmosM, wNmosM;$/;"	m	class:CurrentSenseAmp
+hNmosS	.\CurrentSenseAmp.h	/^	double hNmosL, wNmosL, hNmosS, wNmosS, hNmosM, wNmosM;$/;"	m	class:CurrentSenseAmp
+hReadBody	.\ReadCircuit.h	/^	double areaUnit, hUnit, wUnit, areaReadBody, hReadBody, wReadBody, areaDff, hDff, wDff;$/;"	m	class:ReadCircuit
+hUnit	.\ReadCircuit.h	/^	double areaUnit, hUnit, wUnit, areaReadBody, hReadBody, wReadBody, areaDff, hDff, wDff;$/;"	m	class:ReadCircuit
+height	.\FunctionUnit.h	/^	double height;		\/* Unit: m *\/$/;"	m	class:FunctionUnit
+heightArray	.\SubArray.h	/^	double heightArray;$/;"	m	class:SubArray
+heightFin	.\Technology.h	/^	double heightFin;	\/* Fin height, Unit: m *\/$/;"	m	class:Technology
+heightInFeatureSize	.\MemCell.h	/^	double heightInFeatureSize;	\/* Cell height, Unit: F *\/$/;"	m	class:MemCell
+horowitz	.\formula.cpp	/^double horowitz(double tr, double beta, double rampInput, double *rampOutput) {$/;"	f
+initialized	.\Adder.h	/^	bool initialized;	\/* Initialization flag *\/$/;"	m	class:Adder
+initialized	.\Comparator.h	/^	bool initialized;	\/* Initialization flag *\/$/;"	m	class:Comparator
+initialized	.\CurrentSenseAmp.h	/^	bool initialized;	\/* Initialization flag *\/$/;"	m	class:CurrentSenseAmp
+initialized	.\DFF.h	/^	bool initialized;	\/* Initialization flag *\/$/;"	m	class:DFF
+initialized	.\DeMux.h	/^	bool initialized;	\/* Initialization flag *\/$/;"	m	class:DeMux
+initialized	.\DecoderDriver.h	/^	bool initialized;	\/* Initialization flag *\/$/;"	m	class:DecoderDriver
+initialized	.\LUT.h	/^	bool initialized;	\/* Initialization flag *\/$/;"	m	class:LUT
+initialized	.\MultilevelSAEncoder.h	/^	bool initialized;	\/* Initialization flag *\/$/;"	m	class:MultilevelSAEncoder
+initialized	.\MultilevelSenseAmp.h	/^	bool initialized;		\/* Initialization flag *\/$/;"	m	class:MultilevelSenseAmp
+initialized	.\Mux.h	/^	bool initialized;	\/* Initialization flag *\/$/;"	m	class:Mux
+initialized	.\NewSwitchMatrix.h	/^	bool initialized;	\/* Initialization flag *\/$/;"	m	class:NewSwitchMatrix
+initialized	.\Precharger.h	/^	bool initialized;	\/* Initialization flag *\/$/;"	m	class:Precharger
+initialized	.\ReadCircuit.h	/^	bool initialized;	\/* Initialization flag *\/$/;"	m	class:ReadCircuit
+initialized	.\RippleCounter.h	/^	bool initialized;	\/* Initialization flag *\/$/;"	m	class:RippleCounter
+initialized	.\RowDecoder.h	/^	bool initialized;	\/* Initialization flag *\/$/;"	m	class:RowDecoder
+initialized	.\SRAMWriteDriver.h	/^	bool initialized;	\/* Initialization flag *\/$/;"	m	class:SRAMWriteDriver
+initialized	.\SenseAmp.h	/^	bool initialized;		\/* Initialization flag *\/$/;"	m	class:SenseAmp
+initialized	.\ShiftAdd.h	/^	bool initialized;	\/* Initialization flag *\/$/;"	m	class:ShiftAdd
+initialized	.\SubArray.h	/^	bool initialized;	\/\/ Initialization flag$/;"	m	class:SubArray
+initialized	.\SwitchMatrix.h	/^	bool initialized;	\/* Initialization flag *\/$/;"	m	class:SwitchMatrix
+initialized	.\Technology.h	/^	bool initialized;	\/* Initialization flag *\/$/;"	m	class:Technology
+initialized	.\VoltageSenseAmp.h	/^	bool initialized;	\/* Initialization flag *\/$/;"	m	class:VoltageSenseAmp
+initialized	.\WLDecoderOutput.h	/^	bool initialized;	\/* Initialization flag *\/$/;"	m	class:WLDecoderOutput
+initialized	.\WLNewDecoderDriver.h	/^	bool initialized;	\/* Initialization flag *\/$/;"	m	class:WLNewDecoderDriver
+inputParameter	.\Adder.h	/^	const InputParameter& inputParameter;$/;"	m	class:Adder
+inputParameter	.\Comparator.h	/^	const InputParameter& inputParameter;$/;"	m	class:Comparator
+inputParameter	.\CurrentSenseAmp.h	/^	const InputParameter& inputParameter;$/;"	m	class:CurrentSenseAmp
+inputParameter	.\DFF.h	/^	const InputParameter& inputParameter;$/;"	m	class:DFF
+inputParameter	.\DeMux.h	/^	const InputParameter& inputParameter;$/;"	m	class:DeMux
+inputParameter	.\DecoderDriver.h	/^	const InputParameter& inputParameter;$/;"	m	class:DecoderDriver
+inputParameter	.\LUT.h	/^	const InputParameter& inputParameter;$/;"	m	class:LUT
+inputParameter	.\MultilevelSAEncoder.h	/^	const InputParameter& inputParameter;$/;"	m	class:MultilevelSAEncoder
+inputParameter	.\MultilevelSenseAmp.h	/^	const InputParameter& inputParameter;$/;"	m	class:MultilevelSenseAmp
+inputParameter	.\Mux.h	/^	const InputParameter& inputParameter;$/;"	m	class:Mux
+inputParameter	.\NewSwitchMatrix.h	/^	const InputParameter& inputParameter;$/;"	m	class:NewSwitchMatrix
+inputParameter	.\Precharger.h	/^	const InputParameter& inputParameter;$/;"	m	class:Precharger
+inputParameter	.\ReadCircuit.h	/^	const InputParameter& inputParameter;$/;"	m	class:ReadCircuit
+inputParameter	.\RippleCounter.h	/^	const InputParameter& inputParameter;$/;"	m	class:RippleCounter
+inputParameter	.\RowDecoder.h	/^	const InputParameter& inputParameter;$/;"	m	class:RowDecoder
+inputParameter	.\SRAMWriteDriver.h	/^	const InputParameter& inputParameter;$/;"	m	class:SRAMWriteDriver
+inputParameter	.\SenseAmp.h	/^	const InputParameter& inputParameter;$/;"	m	class:SenseAmp
+inputParameter	.\ShiftAdd.h	/^	const InputParameter& inputParameter;$/;"	m	class:ShiftAdd
+inputParameter	.\SubArray.h	/^	InputParameter& inputParameter;$/;"	m	class:SubArray
+inputParameter	.\SwitchMatrix.h	/^	const InputParameter& inputParameter;$/;"	m	class:SwitchMatrix
+inputParameter	.\VoltageSenseAmp.h	/^	const InputParameter& inputParameter;$/;"	m	class:VoltageSenseAmp
+inputParameter	.\WLDecoderOutput.h	/^	const InputParameter& inputParameter;$/;"	m	class:WLDecoderOutput
+inputParameter	.\WLNewDecoderDriver.h	/^	const InputParameter& inputParameter;$/;"	m	class:WLNewDecoderDriver
+inputParameter	.\calibration.cpp	/^InputParameter inputParameter;$/;"	v
+inputParameter	.\main.cpp	/^InputParameter inputParameter;$/;"	v
+interdff	.\SubArray.h	/^	DFF  interdff;$/;"	m	class:SubArray
+intermux	.\SubArray.h	/^	Mux  intermux;$/;"	m	class:SubArray
+intermuxDecoder	.\SubArray.h	/^	RowDecoder  intermuxDecoder;$/;"	m	class:SubArray
+invalid	.\CurrentSenseAmp.h	/^	bool invalid;		\/* Indicate that the current configuration is not valid *\/$/;"	m	class:CurrentSenseAmp
+invalid	.\WLNewDecoderDriver.h	/^	bool invalid;      \/*Invalidatio flag *\/$/;"	m	class:WLNewDecoderDriver
+layoutWidth	.\ShiftAdd.h	/^	double layoutWidth;$/;"	m	class:ShiftAdd
+leakage	.\FunctionUnit.h	/^	double leakage;		\/* Unit: W *\/$/;"	m	class:FunctionUnit
+lengthCol	.\SubArray.h	/^	double lengthCol;	\/\/ Length of columns, Unit: m$/;"	m	class:SubArray
+lengthRow	.\SubArray.h	/^	double lengthRow;	\/\/ Length of rows, Unit: m$/;"	m	class:SubArray
+levelOutput	.\MultilevelSenseAmp.h	/^    int levelOutput;$/;"	m	class:MultilevelSenseAmp
+levelOutput	.\SubArray.h	/^	int levelOutput;$/;"	m	class:SubArray
+main	.\calibration.cpp	/^int main() {$/;"	f
+main	.\main.cpp	/^int main() {$/;"	f
+main	.\test.cpp	/^int main(){$/;"	f
+main	.\test1.cpp	/^int main(){$/;"	f
+main	.\testmain.cpp	/^int main()$/;"	f
+maxNumIntBit	.\ReadCircuit.h	/^	int maxNumIntBit;$/;"	m	class:ReadCircuit
+maxNumIntBit	.\SubArray.h	/^	int maxNumIntBit;		\/\/ Max # bits for the integrate-and-fire neuron$/;"	m	class:SubArray
+maxNumIntPerCycle	.\ReadCircuit.h	/^	double maxNumIntPerCycle;$/;"	m	class:ReadCircuit
+maxNumWritePulse	.\SubArray.h	/^	int maxNumWritePulse;	\/\/ Max # of write pulses for the device$/;"	m	class:SubArray
+memCellType	.\MemCell.h	/^	Type::MemCellType memCellType;	\/* Memory cell type (like MRAM, PCRAM, etc.) *\/$/;"	m	class:MemCell
+minDriverCurrent	.\Mux.h	/^	double minDriverCurrent;$/;"	m	class:Mux
+minSenseVoltage	.\MemCell.h	/^	double minSenseVoltage; \/* Minimum sense voltage *\/$/;"	m	class:MemCell
+mode	.\DecoderDriver.h	/^	int mode;$/;"	m	class:DecoderDriver
+mode	.\NewSwitchMatrix.h	/^	int mode;$/;"	m	class:NewSwitchMatrix
+mode	.\ReadCircuit.h	/^	ReadCircuitMode mode;$/;"	m	class:ReadCircuit
+mode	.\RowDecoder.h	/^	DecoderMode mode;	\/\/ ROW or COLUMN mode$/;"	m	class:RowDecoder
+mode	.\SwitchMatrix.h	/^	int mode;$/;"	m	class:SwitchMatrix
+multifunctional	.\SubArray.h	/^	bool multifunctional;	\/\/ Multifunctional memory$/;"	m	class:SubArray
+multifunctional	.\WLDecoderOutput.h	/^	bool multifunctional;$/;"	m	class:WLDecoderOutput
+multifunctional	.\WLNewDecoderDriver.h	/^	bool multifunctional;$/;"	m	class:WLNewDecoderDriver
+multilevelSAEncoder	.\SubArray.h	/^	MultilevelSAEncoder multilevelSAEncoder;$/;"	m	class:SubArray
+multilevelSenseAmp	.\SubArray.h	/^	MultilevelSenseAmp multilevelSenseAmp;$/;"	m	class:SubArray
+multipleCells	.\MemCell.h	/^	int multipleCells;	\/* Use multiple cells as one weight element to reduce the variation (only layout now) *\/$/;"	m	class:MemCell
+multipleCells	.\calibration.cpp	/^extern const int multipleCells = 1;	\/\/ Use redundant cells or not (RRAM only). Value should be N^2 such as 1, 4, 9 ...etc$/;"	v
+multipleCells	.\main.cpp	/^extern const int multipleCells = 1;	\/\/ Use redundant cells or not (RRAM only). Value should be N^2 such as 1, 4, 9 ...etc$/;"	v
+mux	.\LUT.h	/^	Mux mux;$/;"	m	class:LUT
+mux	.\SubArray.h	/^	Mux     mux;$/;"	m	class:SubArray
+muxDecoder	.\LUT.h	/^	RowDecoder muxDecoder;$/;"	m	class:LUT
+muxDecoder	.\SubArray.h	/^	RowDecoder  muxDecoder;$/;"	m	class:SubArray
+neuro	.\MultilevelSenseAmp.h	/^	bool neuro;$/;"	m	class:MultilevelSenseAmp
+neuro	.\NewSwitchMatrix.h	/^	bool neuro;$/;"	m	class:NewSwitchMatrix
+neuro	.\Precharger.h	/^	bool neuro;$/;"	m	class:Precharger
+neuro	.\SRAMWriteDriver.h	/^	bool neuro;$/;"	m	class:SRAMWriteDriver
+neuro	.\SenseAmp.h	/^	bool neuro;$/;"	m	class:SenseAmp
+neuro	.\SubArray.h	/^	bool neuro;				\/\/ Neuro mode$/;"	m	class:SubArray
+neuro	.\SwitchMatrix.h	/^	bool neuro;$/;"	m	class:SwitchMatrix
+neuro	.\WLDecoderOutput.h	/^	bool neuro;$/;"	m	class:WLDecoderOutput
+neuro	.\WLNewDecoderDriver.h	/^	bool neuro;$/;"	m	class:WLNewDecoderDriver
+newBNNparallelMode	.\SubArray.h	/^	bool newBNNparallelMode;      \/\/ new pseudo-1T1R BNN parallel mode$/;"	m	class:SubArray
+newBNNrowbyrowMode	.\SubArray.h	/^	bool newBNNrowbyrowMode;      \/\/ new pseudo-1T1R BNN row-by-row mode$/;"	m	class:SubArray
+newHeight	.\FunctionUnit.h	/^	double newWidth, newHeight;$/;"	m	class:FunctionUnit
+newWidth	.\FunctionUnit.h	/^	double newWidth, newHeight;$/;"	m	class:FunctionUnit
+none_access	.\typedef.h	/^	none_access$/;"	e	enum:CellAccessType
+nonlinearIV	.\MemCell.h	/^	bool nonlinearIV;	\/* Consider I-V nonlinearity or not (Currently this option is for cross-point array. It is hard to have this option in pseudo-crossbar since it has an access transistor and the transistor's resistance can be comparable to RRAM's resistance after considering the nonlinearity. In this case, we have to iteratively find both the resistance and Vw across RRAM.) *\/$/;"	m	class:MemCell
+nonlinearity	.\MemCell.h	/^	double nonlinearity;	\/* Current at write voltage \/ current at 1\/2 write voltage *\/$/;"	m	class:MemCell
+numAdder	.\Adder.h	/^	int numAdder;$/;"	m	class:Adder
+numAdder	.\ShiftAdd.h	/^	int numInv, numNand, numAdder, numDff;$/;"	m	class:ShiftAdd
+numAdderBit	.\ShiftAdd.h	/^	int numAdderBit, numBitPerDff;$/;"	m	class:ShiftAdd
+numAddrRow	.\RowDecoder.h	/^	int numAddrRow;		\/* Number of rows *\/$/;"	m	class:RowDecoder
+numBit	.\Adder.h	/^	int numBit;$/;"	m	class:Adder
+numBit	.\Comparator.h	/^	int numBit;$/;"	m	class:Comparator
+numBit	.\RippleCounter.h	/^	int numBit;$/;"	m	class:RippleCounter
+numBitInput	.\calibration.cpp	/^extern const int numBitInput = 4;	\/\/ # of bits of the input data$/;"	v
+numBitInput	.\main.cpp	/^extern const int numBitInput = 1;	\/\/ # of bits of the input data$/;"	v
+numBitPartialSum	.\main.cpp	/^extern const int numBitPartialSum = 8;	\/\/ # of bits of the digital output (partial weighted sum output)$/;"	v
+numBitPerDff	.\ShiftAdd.h	/^	int numAdderBit, numBitPerDff;$/;"	m	class:ShiftAdd
+numCMOS	.\MultilevelSenseAmp.h	/^	int numCMOS;$/;"	m	class:MultilevelSenseAmp
+numCell	.\LUT.h	/^	int numCell;$/;"	m	class:LUT
+numCellPerSynapse	.\SubArray.h	/^	int numCellPerSynapse;  \/\/ Number of cells per synapse$/;"	m	class:SubArray
+numCol	.\CurrentSenseAmp.h	/^	int numCol;		\/* Number of columns *\/$/;"	m	class:CurrentSenseAmp
+numCol	.\MultilevelSenseAmp.h	/^	int numCol;				\/* Number of columns *\/$/;"	m	class:MultilevelSenseAmp
+numCol	.\Precharger.h	/^	int numCol;			\/* Number of columns *\/$/;"	m	class:Precharger
+numCol	.\SRAMWriteDriver.h	/^	int numCol;			\/* Number of columns *\/$/;"	m	class:SRAMWriteDriver
+numCol	.\SenseAmp.h	/^	int numCol;				\/* Number of columns *\/$/;"	m	class:SenseAmp
+numCol	.\SubArray.h	/^	int numCol;			\/\/ Number of columns$/;"	m	class:SubArray
+numColInv	.\RowDecoder.h	/^	int numColNor, numNorPerCol, numColNand, numNandPerCol, numColInv, numInvPerCol;$/;"	m	class:RowDecoder
+numColMuxed	.\SubArray.h	/^	int numColMuxed;	\/\/ How many columns share 1 read circuit (for neuro mode with analog RRAM) or 1 S\/A (for memory mode or neuro mode with digital RRAM)$/;"	m	class:SubArray
+numColNand	.\RowDecoder.h	/^	int numColNor, numNorPerCol, numColNand, numNandPerCol, numColInv, numInvPerCol;$/;"	m	class:RowDecoder
+numColNor	.\RowDecoder.h	/^	int numColNor, numNorPerCol, numColNand, numNandPerCol, numColInv, numInvPerCol;$/;"	m	class:RowDecoder
+numColTg	.\DecoderDriver.h	/^	int numRowTg, numColTg;$/;"	m	class:DecoderDriver
+numColTg	.\NewSwitchMatrix.h	/^	int numRowTg, numColTg;$/;"	m	class:NewSwitchMatrix
+numColTgPair	.\SwitchMatrix.h	/^	int numRowTgPair, numColTgPair;$/;"	m	class:SwitchMatrix
+numComparator	.\Comparator.h	/^	int numComparator;$/;"	m	class:Comparator
+numDff	.\DFF.h	/^	int numDff;			\/* Number of columns *\/$/;"	m	class:DFF
+numDff	.\ReadCircuit.h	/^	int numDff;$/;"	m	class:ReadCircuit
+numDff	.\ShiftAdd.h	/^	int numInv, numNand, numAdder, numDff;$/;"	m	class:ShiftAdd
+numEncoder	.\MultilevelSAEncoder.h	/^	int numEncoder;     \/\/ number of encoder needed$/;"	m	class:MultilevelSAEncoder
+numEntry	.\LUT.h	/^	int numYbit, numEntry;$/;"	m	class:LUT
+numGate	.\MultilevelSAEncoder.h	/^	int numGate;        \/\/ number of NAND gate in encoder $/;"	m	class:MultilevelSAEncoder
+numInput	.\DeMux.h	/^	int numInput;$/;"	m	class:DeMux
+numInput	.\MultilevelSAEncoder.h	/^	int numInput;       \/\/ number of NAND gate in encoder$/;"	m	class:MultilevelSAEncoder
+numInput	.\Mux.h	/^	int numInput;$/;"	m	class:Mux
+numInv	.\RowDecoder.h	/^	int numInv, numNand, numNor, numMetalConnection;$/;"	m	class:RowDecoder
+numInv	.\ShiftAdd.h	/^	int numInv, numNand, numAdder, numDff;$/;"	m	class:ShiftAdd
+numInvPerCol	.\RowDecoder.h	/^	int numColNor, numNorPerCol, numColNand, numNandPerCol, numColInv, numInvPerCol;$/;"	m	class:RowDecoder
+numInvPerRow	.\RowDecoder.h	/^	int numRowNor, numNorPerRow, numRowNand, numNandPerRow, numRowInv, numInvPerRow;$/;"	m	class:RowDecoder
+numLevel	.\MultilevelSAEncoder.h	/^	int numLevel;       \/\/ number of levels from MultilevelSA$/;"	m	class:MultilevelSAEncoder
+numLut	.\SubArray.h	/^	int numLut; \/\/ Parameter for FPGA$/;"	m	class:SubArray
+numMetalConnection	.\RowDecoder.h	/^	int numInv, numNand, numNor, numMetalConnection;$/;"	m	class:RowDecoder
+numNand	.\RowDecoder.h	/^	int numInv, numNand, numNor, numMetalConnection;$/;"	m	class:RowDecoder
+numNand	.\ShiftAdd.h	/^	int numInv, numNand, numAdder, numDff;$/;"	m	class:ShiftAdd
+numNandPerCol	.\RowDecoder.h	/^	int numColNor, numNorPerCol, numColNand, numNandPerCol, numColInv, numInvPerCol;$/;"	m	class:RowDecoder
+numNandPerRow	.\RowDecoder.h	/^	int numRowNor, numNorPerRow, numRowNand, numNandPerRow, numRowInv, numInvPerRow;$/;"	m	class:RowDecoder
+numNor	.\RowDecoder.h	/^	int numInv, numNand, numNor, numMetalConnection;$/;"	m	class:RowDecoder
+numNorPerCol	.\RowDecoder.h	/^	int numColNor, numNorPerCol, numColNand, numNandPerCol, numColInv, numInvPerCol;$/;"	m	class:RowDecoder
+numNorPerRow	.\RowDecoder.h	/^	int numRowNor, numNorPerRow, numRowNand, numNandPerRow, numRowInv, numInvPerRow;$/;"	m	class:RowDecoder
+numOutput	.\DecoderDriver.h	/^	int numOutput;$/;"	m	class:DecoderDriver
+numOutput	.\NewSwitchMatrix.h	/^	int numOutput;$/;"	m	class:NewSwitchMatrix
+numOutput	.\SwitchMatrix.h	/^	int numOutput;$/;"	m	class:SwitchMatrix
+numReadCellPerOperationFPGA	.\Precharger.h	/^	int numReadCellPerOperationFPGA;$/;"	m	class:Precharger
+numReadCellPerOperationFPGA	.\SenseAmp.h	/^	int numReadCellPerOperationFPGA;$/;"	m	class:SenseAmp
+numReadCellPerOperationFPGA	.\SubArray.h	/^	int numReadCellPerOperationFPGA;    \/\/ Parameter for SRAM$/;"	m	class:SubArray
+numReadCellPerOperationMemory	.\Precharger.h	/^	int numReadCellPerOperationMemory;$/;"	m	class:Precharger
+numReadCellPerOperationMemory	.\SenseAmp.h	/^	int numReadCellPerOperationMemory;$/;"	m	class:SenseAmp
+numReadCellPerOperationMemory	.\SubArray.h	/^	int numReadCellPerOperationMemory;  \/\/ Parameter for SRAM$/;"	m	class:SubArray
+numReadCellPerOperationNeuro	.\CurrentSenseAmp.h	/^	int numReadCellPerOperationNeuro;$/;"	m	class:CurrentSenseAmp
+numReadCellPerOperationNeuro	.\MultilevelSenseAmp.h	/^	int numReadCellPerOperationNeuro;$/;"	m	class:MultilevelSenseAmp
+numReadCellPerOperationNeuro	.\Precharger.h	/^	int numReadCellPerOperationNeuro;$/;"	m	class:Precharger
+numReadCellPerOperationNeuro	.\SenseAmp.h	/^	int numReadCellPerOperationNeuro;$/;"	m	class:SenseAmp
+numReadCellPerOperationNeuro	.\SubArray.h	/^	int numReadCellPerOperationNeuro;   \/\/ Parameter for SRAM (use numBitPerCell cells to represent one D)$/;"	m	class:SubArray
+numReadCol	.\ReadCircuit.h	/^	int numReadCol;$/;"	m	class:ReadCircuit
+numReadCol	.\VoltageSenseAmp.h	/^	int numReadCol;$/;"	m	class:VoltageSenseAmp
+numReadLutPerOperationFPGA	.\SubArray.h	/^	int numReadLutPerOperationFPGA; \/\/ parameter for FPGA$/;"	m	class:SubArray
+numReadPulse	.\ShiftAdd.h	/^	int numReadPulse;$/;"	m	class:ShiftAdd
+numReadPulse	.\SubArray.h	/^	int numReadPulse;		\/\/ # of read pulses for the input vector$/;"	m	class:SubArray
+numRow	.\SubArray.h	/^	int numRow;			\/\/ Number of rows$/;"	m	class:SubArray
+numRowInv	.\RowDecoder.h	/^	int numRowNor, numNorPerRow, numRowNand, numNandPerRow, numRowInv, numInvPerRow;$/;"	m	class:RowDecoder
+numRowNand	.\RowDecoder.h	/^	int numRowNor, numNorPerRow, numRowNand, numNandPerRow, numRowInv, numInvPerRow;$/;"	m	class:RowDecoder
+numRowNor	.\RowDecoder.h	/^	int numRowNor, numNorPerRow, numRowNand, numNandPerRow, numRowInv, numInvPerRow;$/;"	m	class:RowDecoder
+numRowTg	.\DecoderDriver.h	/^	int numRowTg, numColTg;$/;"	m	class:DecoderDriver
+numRowTg	.\Mux.h	/^	int numRowTg;$/;"	m	class:Mux
+numRowTg	.\NewSwitchMatrix.h	/^	int numRowTg, numColTg;$/;"	m	class:NewSwitchMatrix
+numRowTgPair	.\SwitchMatrix.h	/^	int numRowTgPair, numColTgPair;$/;"	m	class:SwitchMatrix
+numRowUnit	.\ReadCircuit.h	/^	int numUnitPerRow, numRowUnit;$/;"	m	class:ReadCircuit
+numSelection	.\Mux.h	/^	int numSelection;		\/* Number of Selections *\/$/;"	m	class:Mux
+numUnit	.\ShiftAdd.h	/^	int numUnit;$/;"	m	class:ShiftAdd
+numUnitPerRow	.\ReadCircuit.h	/^	int numUnitPerRow, numRowUnit;$/;"	m	class:ReadCircuit
+numWLRow	.\WLDecoderOutput.h	/^	int numWLRow;$/;"	m	class:WLDecoderOutput
+numWLRow	.\WLNewDecoderDriver.h	/^	int numWLRow;$/;"	m	class:WLNewDecoderDriver
+numWeightBit	.\calibration.cpp	/^extern const int numWeightBit = 1; \/\/ # of weight bits (only for pure algorithm and SRAM hardware)$/;"	v
+numWeightBit	.\main.cpp	/^extern const int numWeightBit = 2; \/\/ # of weight bits (only for pure algorithm and SRAM hardware)$/;"	v
+numWriteCellPerOperationFPGA	.\Precharger.h	/^	int numWriteCellPerOperationFPGA;$/;"	m	class:Precharger
+numWriteCellPerOperationFPGA	.\SRAMWriteDriver.h	/^	int numWriteCellPerOperationFPGA;$/;"	m	class:SRAMWriteDriver
+numWriteCellPerOperationFPGA	.\SubArray.h	/^	int numWriteCellPerOperationFPGA;   \/\/ Parameter for SRAM$/;"	m	class:SubArray
+numWriteCellPerOperationMemory	.\Precharger.h	/^	int numWriteCellPerOperationMemory;$/;"	m	class:Precharger
+numWriteCellPerOperationMemory	.\SRAMWriteDriver.h	/^	int numWriteCellPerOperationMemory;$/;"	m	class:SRAMWriteDriver
+numWriteCellPerOperationMemory	.\SubArray.h	/^	int numWriteCellPerOperationMemory;$/;"	m	class:SubArray
+numWriteCellPerOperationMemory	.\SwitchMatrix.h	/^	int numWriteCellPerOperationMemory;$/;"	m	class:SwitchMatrix
+numWriteCellPerOperationNeuro	.\NewSwitchMatrix.h	/^	int numWriteCellPerOperationNeuro;$/;"	m	class:NewSwitchMatrix
+numWriteCellPerOperationNeuro	.\Precharger.h	/^	int numWriteCellPerOperationNeuro;$/;"	m	class:Precharger
+numWriteCellPerOperationNeuro	.\SRAMWriteDriver.h	/^	int numWriteCellPerOperationNeuro;$/;"	m	class:SRAMWriteDriver
+numWriteCellPerOperationNeuro	.\SubArray.h	/^	int numWriteCellPerOperationNeuro;  \/\/ For multifunctional mode or neuro only mode$/;"	m	class:SubArray
+numWriteCellPerOperationNeuro	.\SwitchMatrix.h	/^	int numWriteCellPerOperationNeuro;$/;"	m	class:SwitchMatrix
+numWriteColMuxed	.\SubArray.h	/^	int numWriteColMuxed;	\/\/ \/\/ How many columns share 1 write column decoder driver (for memory or neuro mode with digital RRAM)$/;"	m	class:SubArray
+numWritePulse	.\NewSwitchMatrix.h	/^	double numWritePulse;$/;"	m	class:NewSwitchMatrix
+numWritePulse	.\SubArray.h	/^	double numWritePulse;	\/\/ Average number of write pulse$/;"	m	class:SubArray
+numWritePulse	.\SwitchMatrix.h	/^	double numWritePulse;$/;"	m	class:SwitchMatrix
+numYbit	.\LUT.h	/^	int numYbit, numEntry;$/;"	m	class:LUT
+numof1	.\SubArray.h	/^	double numof1, numof2, numof3, numof4, numof5, numof6, numof7, numof8, numof9, numof10;$/;"	m	class:SubArray
+numof10	.\SubArray.h	/^	double numof1, numof2, numof3, numof4, numof5, numof6, numof7, numof8, numof9, numof10;$/;"	m	class:SubArray
+numof2	.\SubArray.h	/^	double numof1, numof2, numof3, numof4, numof5, numof6, numof7, numof8, numof9, numof10;$/;"	m	class:SubArray
+numof3	.\SubArray.h	/^	double numof1, numof2, numof3, numof4, numof5, numof6, numof7, numof8, numof9, numof10;$/;"	m	class:SubArray
+numof4	.\SubArray.h	/^	double numof1, numof2, numof3, numof4, numof5, numof6, numof7, numof8, numof9, numof10;$/;"	m	class:SubArray
+numof5	.\SubArray.h	/^	double numof1, numof2, numof3, numof4, numof5, numof6, numof7, numof8, numof9, numof10;$/;"	m	class:SubArray
+numof6	.\SubArray.h	/^	double numof1, numof2, numof3, numof4, numof5, numof6, numof7, numof8, numof9, numof10;$/;"	m	class:SubArray
+numof7	.\SubArray.h	/^	double numof1, numof2, numof3, numof4, numof5, numof6, numof7, numof8, numof9, numof10;$/;"	m	class:SubArray
+numof8	.\SubArray.h	/^	double numof1, numof2, numof3, numof4, numof5, numof6, numof7, numof8, numof9, numof10;$/;"	m	class:SubArray
+numof9	.\SubArray.h	/^	double numof1, numof2, numof3, numof4, numof5, numof6, numof7, numof8, numof9, numof10;$/;"	m	class:SubArray
+parallel	.\CurrentSenseAmp.h	/^	bool parallel;$/;"	m	class:CurrentSenseAmp
+parallel	.\RowDecoder.h	/^	bool parallel;    \/\/ for mux decoder of parallel reading mode$/;"	m	class:RowDecoder
+parallelCurrentSenseAmp	.\SubArray.h	/^	CurrentSenseAmp parallelCurrentSenseAmp;$/;"	m	class:SubArray
+parallelWrite	.\NewSwitchMatrix.h	/^	bool parallelWrite;$/;"	m	class:NewSwitchMatrix
+parallelWrite	.\SubArray.h	/^	bool parallelWrite; \/\/ Parameter for crossbar RRAM in neuro mode$/;"	m	class:SubArray
+parallelWrite	.\SwitchMatrix.h	/^	bool parallelWrite;$/;"	m	class:SwitchMatrix
+phyGateLength	.\Technology.h	/^	double phyGateLength;	\/* Physical gate length, Unit: m *\/$/;"	m	class:Technology
+pitchSenseAmp	.\SenseAmp.h	/^	double pitchSenseAmp;	\/* The maximum width allowed for one sense amplifier layout *\/$/;"	m	class:SenseAmp
+pnSizeRatio	.\Technology.h	/^	double pnSizeRatio;		\/* PMOS to NMOS size ratio *\/$/;"	m	class:Technology
+precharger	.\SubArray.h	/^	Precharger precharger;$/;"	m	class:SubArray
+processNode	.\InputParameter.h	/^	int processNode;				\/* Process node (nm) *\/$/;"	m	class:InputParameter
+processNode	.\MemCell.h	/^	int processNode;        \/* Cell original process technology node, Unit: nm*\/$/;"	m	class:MemCell
+rampInput	.\Adder.h	/^	double rampInput, rampOutput;$/;"	m	class:Adder
+rampInput	.\Comparator.h	/^	double rampInput, rampOutput;$/;"	m	class:Comparator
+rampInput	.\DFF.h	/^	double rampInput, rampOutput;$/;"	m	class:DFF
+rampInput	.\DeMux.h	/^	double rampInput, rampOutput;$/;"	m	class:DeMux
+rampInput	.\DecoderDriver.h	/^	double rampInput, rampOutput;$/;"	m	class:DecoderDriver
+rampInput	.\LUT.h	/^	double rampInput, rampOutput;$/;"	m	class:LUT
+rampInput	.\MultilevelSAEncoder.h	/^	double rampInput, rampOutput;$/;"	m	class:MultilevelSAEncoder
+rampInput	.\Mux.h	/^	double rampInput, rampOutput;$/;"	m	class:Mux
+rampInput	.\NewSwitchMatrix.h	/^	double rampInput, rampOutput;$/;"	m	class:NewSwitchMatrix
+rampInput	.\Precharger.h	/^	double rampInput, rampOutput;$/;"	m	class:Precharger
+rampInput	.\ReadCircuit.h	/^	double rampInput, rampOutput;$/;"	m	class:ReadCircuit
+rampInput	.\RowDecoder.h	/^	double rampInput, rampOutput;$/;"	m	class:RowDecoder
+rampInput	.\SRAMWriteDriver.h	/^	double rampInput, rampOutput;$/;"	m	class:SRAMWriteDriver
+rampInput	.\ShiftAdd.h	/^	double rampInput, rampOutput;$/;"	m	class:ShiftAdd
+rampInput	.\SwitchMatrix.h	/^	double rampInput, rampOutput;$/;"	m	class:SwitchMatrix
+rampInput	.\VoltageSenseAmp.h	/^	double rampInput, rampOutput;$/;"	m	class:VoltageSenseAmp
+rampInput	.\WLDecoderOutput.h	/^	double rampInput, rampOutput;$/;"	m	class:WLDecoderOutput
+rampInput	.\WLNewDecoderDriver.h	/^	double rampInput, rampOutput;$/;"	m	class:WLNewDecoderDriver
+rampOutput	.\Adder.h	/^	double rampInput, rampOutput;$/;"	m	class:Adder
+rampOutput	.\Comparator.h	/^	double rampInput, rampOutput;$/;"	m	class:Comparator
+rampOutput	.\DFF.h	/^	double rampInput, rampOutput;$/;"	m	class:DFF
+rampOutput	.\DeMux.h	/^	double rampInput, rampOutput;$/;"	m	class:DeMux
+rampOutput	.\DecoderDriver.h	/^	double rampInput, rampOutput;$/;"	m	class:DecoderDriver
+rampOutput	.\LUT.h	/^	double rampInput, rampOutput;$/;"	m	class:LUT
+rampOutput	.\MultilevelSAEncoder.h	/^	double rampInput, rampOutput;$/;"	m	class:MultilevelSAEncoder
+rampOutput	.\Mux.h	/^	double rampInput, rampOutput;$/;"	m	class:Mux
+rampOutput	.\NewSwitchMatrix.h	/^	double rampInput, rampOutput;$/;"	m	class:NewSwitchMatrix
+rampOutput	.\Precharger.h	/^	double rampInput, rampOutput;$/;"	m	class:Precharger
+rampOutput	.\ReadCircuit.h	/^	double rampInput, rampOutput;$/;"	m	class:ReadCircuit
+rampOutput	.\RowDecoder.h	/^	double rampInput, rampOutput;$/;"	m	class:RowDecoder
+rampOutput	.\SRAMWriteDriver.h	/^	double rampInput, rampOutput;$/;"	m	class:SRAMWriteDriver
+rampOutput	.\ShiftAdd.h	/^	double rampInput, rampOutput;$/;"	m	class:ShiftAdd
+rampOutput	.\SwitchMatrix.h	/^	double rampInput, rampOutput;$/;"	m	class:SwitchMatrix
+rampOutput	.\VoltageSenseAmp.h	/^	double rampInput, rampOutput;$/;"	m	class:VoltageSenseAmp
+rampOutput	.\WLDecoderOutput.h	/^	double rampInput, rampOutput;$/;"	m	class:WLDecoderOutput
+rampOutput	.\WLNewDecoderDriver.h	/^	double rampInput, rampOutput;$/;"	m	class:WLNewDecoderDriver
+readCircuit	.\SubArray.h	/^	ReadCircuit readCircuit;$/;"	m	class:SubArray
+readCircuitMode	.\SubArray.h	/^	ReadCircuitMode readCircuitMode;$/;"	m	class:SubArray
+readDynamicEnergy	.\FunctionUnit.h	/^	double readDynamicEnergy, writeDynamicEnergy;	\/* Unit: J *\/$/;"	m	class:FunctionUnit
+readDynamicEnergyArray	.\SubArray.h	/^	double readDynamicEnergyArray, writeDynamicEnergyArray;$/;"	m	class:SubArray
+readLatency	.\FunctionUnit.h	/^	double readLatency, writeLatency;		\/* Unit: s *\/$/;"	m	class:FunctionUnit
+readPower	.\FunctionUnit.h	/^	double readPower, writePower;$/;"	m	class:FunctionUnit
+readPulseWidth	.\MemCell.h	/^	double readPulseWidth;$/;"	m	class:MemCell
+readVoltage	.\MemCell.h	/^	double readVoltage;$/;"	m	class:MemCell
+relaxArrayCellHeight	.\SubArray.h	/^	bool relaxArrayCellHeight;	\/\/ true: relax the memory cell height to match the height of periperal circuit unit that connects to the row (ex: standard cell height in the last stage of row decoder) if the latter is larger$/;"	m	class:SubArray
+relaxArrayCellWidth	.\SubArray.h	/^	bool relaxArrayCellWidth;	\/\/ true: relax the memory cell width to match the width of periperal circuit unit that connects to the column (ex: pass gate width in the column mux) if the latter is larger$/;"	m	class:SubArray
+resCellAccess	.\MemCell.h	/^	double resCellAccess;$/;"	m	class:MemCell
+resCellAccess	.\SubArray.h	/^	double resCellAccess;	\/\/ Resistance of access device, Unit: ohm$/;"	m	class:SubArray
+resCol	.\SubArray.h	/^	double resCol;		\/\/ Column resistance, Unit: ohm$/;"	m	class:SubArray
+resLoad	.\DecoderDriver.h	/^	double resLoad;	\/* Output resistance, unit: ohm *\/$/;"	m	class:DecoderDriver
+resLoad	.\NewSwitchMatrix.h	/^	double resLoad;$/;"	m	class:NewSwitchMatrix
+resLoad	.\Precharger.h	/^	double capLoad, resLoad;$/;"	m	class:Precharger
+resLoad	.\SRAMWriteDriver.h	/^	double capLoad, resLoad;$/;"	m	class:SRAMWriteDriver
+resLoad	.\SwitchMatrix.h	/^	double resLoad;$/;"	m	class:SwitchMatrix
+resLoad	.\WLDecoderOutput.h	/^	double resLoad;	\/* Output resistance, unit: ohm *\/$/;"	m	class:WLDecoderOutput
+resLoad	.\WLNewDecoderDriver.h	/^	double resLoad;	\/* Output resistance, unit: ohm *\/$/;"	m	class:WLNewDecoderDriver
+resMemCellAvg	.\MemCell.h	/^	double resMemCellAvg;	\/\/ At on-chip Vr (different than the Vr in the reported measurement data)$/;"	m	class:MemCell
+resMemCellAvgAtHalfVw	.\MemCell.h	/^	double resMemCellAvgAtHalfVw;$/;"	m	class:MemCell
+resMemCellAvgAtVw	.\MemCell.h	/^	double resMemCellAvgAtVw;$/;"	m	class:MemCell
+resMemCellOff	.\MemCell.h	/^	double resMemCellOff;	\/\/ At on-chip Vr (different than the Vr in the reported measurement data)$/;"	m	class:MemCell
+resMemCellOffAtHalfVw	.\MemCell.h	/^	double resMemCellOffAtHalfVw;$/;"	m	class:MemCell
+resMemCellOffAtVw	.\MemCell.h	/^	double resMemCellOffAtVw;$/;"	m	class:MemCell
+resMemCellOn	.\MemCell.h	/^	double resMemCellOn;	\/\/ At on-chip Vr (different than the Vr in the reported measurement data)$/;"	m	class:MemCell
+resMemCellOnAtHalfVw	.\MemCell.h	/^	double resMemCellOnAtHalfVw;$/;"	m	class:MemCell
+resMemCellOnAtVw	.\MemCell.h	/^	double resMemCellOnAtVw;$/;"	m	class:MemCell
+resPrecharge	.\VoltageSenseAmp.h	/^	double resPrecharge;$/;"	m	class:VoltageSenseAmp
+resRow	.\SubArray.h	/^	double resRow;		\/\/ Row resistance, Unit: ohm$/;"	m	class:SubArray
+resTg	.\DeMux.h	/^	double resTg;$/;"	m	class:DeMux
+resTg	.\DecoderDriver.h	/^	double resTg;$/;"	m	class:DecoderDriver
+resTg	.\Mux.h	/^	double resTg;$/;"	m	class:Mux
+resTg	.\NewSwitchMatrix.h	/^	double resTg;$/;"	m	class:NewSwitchMatrix
+resTg	.\SwitchMatrix.h	/^	double resTg;$/;"	m	class:SwitchMatrix
+resTg	.\WLDecoderOutput.h	/^	double resTg;$/;"	m	class:WLDecoderOutput
+resTg	.\WLNewDecoderDriver.h	/^	double resTg;$/;"	m	class:WLNewDecoderDriver
+resWireLoadPerColumn	.\Precharger.h	/^	double capWireLoadPerColumn, resWireLoadPerColumn;$/;"	m	class:Precharger
+resistanceAvg	.\MemCell.h	/^	double resistanceAvg;$/;"	m	class:MemCell
+resistanceOff	.\MemCell.h	/^	double resistanceOff;	\/* Turn-off resistance *\/$/;"	m	class:MemCell
+resistanceOn	.\MemCell.h	/^	double resistanceOn;	\/* Turn-on resistance *\/$/;"	m	class:MemCell
+rowCurrentSenseAmp	.\SubArray.h	/^	CurrentSenseAmp rowCurrentSenseAmp;$/;"	m	class:SubArray
+rowbyrow	.\CurrentSenseAmp.h	/^	bool rowbyrow;$/;"	m	class:CurrentSenseAmp
+senseAmp	.\SubArray.h	/^	SenseAmp senseAmp;$/;"	m	class:SubArray
+senseVoltage	.\SenseAmp.h	/^	double senseVoltage;	\/* Minimum sensible voltage *\/$/;"	m	class:SenseAmp
+shiftAdd	.\SubArray.h	/^	ShiftAdd shiftAdd;$/;"	m	class:SubArray
+shiftAddEnable	.\SubArray.h	/^	bool shiftAddEnable;    \/\/ 0 for partition because the shift-and-add circuit will be after the last A&R stage$/;"	m	class:SubArray
+slSwitchMatrix	.\SubArray.h	/^	SwitchMatrix    slSwitchMatrix;$/;"	m	class:SubArray
+spikingMode	.\ReadCircuit.h	/^	SpikingMode spikingMode;$/;"	m	class:ReadCircuit
+spikingMode	.\ShiftAdd.h	/^	SpikingMode spikingMode;$/;"	m	class:ShiftAdd
+spikingMode	.\SubArray.h	/^	SpikingMode spikingMode;	\/\/ NONSPIKING: input data using pulses in binary representation$/;"	m	class:SubArray
+sramWriteDriver	.\SubArray.h	/^	SRAMWriteDriver sramWriteDriver;$/;"	m	class:SubArray
+tech	.\Adder.h	/^	const Technology& tech;$/;"	m	class:Adder
+tech	.\Comparator.h	/^	const Technology& tech;$/;"	m	class:Comparator
+tech	.\CurrentSenseAmp.h	/^	const Technology& tech;$/;"	m	class:CurrentSenseAmp
+tech	.\DFF.h	/^	const Technology& tech;$/;"	m	class:DFF
+tech	.\DeMux.h	/^	const Technology& tech;$/;"	m	class:DeMux
+tech	.\DecoderDriver.h	/^	const Technology& tech;$/;"	m	class:DecoderDriver
+tech	.\LUT.h	/^	const Technology& tech;$/;"	m	class:LUT
+tech	.\MultilevelSAEncoder.h	/^	const Technology& tech;$/;"	m	class:MultilevelSAEncoder
+tech	.\MultilevelSenseAmp.h	/^	const Technology& tech;$/;"	m	class:MultilevelSenseAmp
+tech	.\Mux.h	/^	const Technology& tech;$/;"	m	class:Mux
+tech	.\NewSwitchMatrix.h	/^	const Technology& tech;$/;"	m	class:NewSwitchMatrix
+tech	.\Precharger.h	/^	const Technology& tech;$/;"	m	class:Precharger
+tech	.\ReadCircuit.h	/^	const Technology& tech;$/;"	m	class:ReadCircuit
+tech	.\RippleCounter.h	/^	const Technology& tech;$/;"	m	class:RippleCounter
+tech	.\RowDecoder.h	/^	const Technology& tech;$/;"	m	class:RowDecoder
+tech	.\SRAMWriteDriver.h	/^	const Technology& tech;$/;"	m	class:SRAMWriteDriver
+tech	.\SenseAmp.h	/^	const Technology& tech;$/;"	m	class:SenseAmp
+tech	.\ShiftAdd.h	/^	const Technology& tech;$/;"	m	class:ShiftAdd
+tech	.\SubArray.h	/^	Technology& tech;$/;"	m	class:SubArray
+tech	.\SwitchMatrix.h	/^	const Technology& tech;$/;"	m	class:SwitchMatrix
+tech	.\VoltageSenseAmp.h	/^	const Technology& tech;$/;"	m	class:VoltageSenseAmp
+tech	.\WLDecoderOutput.h	/^	const Technology& tech;$/;"	m	class:WLDecoderOutput
+tech	.\WLNewDecoderDriver.h	/^	const Technology& tech;$/;"	m	class:WLNewDecoderDriver
+tech	.\calibration.cpp	/^Technology tech;$/;"	v
+tech	.\main.cpp	/^Technology tech;$/;"	v
+temperature	.\InputParameter.h	/^	int temperature;				\/* The ambient temperature, Unit: K *\/$/;"	m	class:InputParameter
+totalArea	.\FunctionUnit.h	/^	double totalArea;		\/* Unit: m^2 *\/$/;"	m	class:FunctionUnit
+transistorType	.\InputParameter.h	/^	TransistorType transistorType;	\/* Conventional CMOS, 2D FET, or TFET *\/$/;"	m	class:InputParameter
+transistorType	.\Technology.h	/^	TransistorType transistorType;$/;"	m	class:Technology
+tsqinghua	.\SubArray.h	/^	bool tsqinghua;       \/\/ tsqinghua's design (crossbar array)$/;"	m	class:SubArray
+unitWireRes	.\SubArray.h	/^	double unitWireRes;	\/\/ Unit wire resistance, Unit ohm\/m$/;"	m	class:SubArray
+usedArea	.\FunctionUnit.h	/^	double usedArea;		\/* Unit: m^2 *\/$/;"	m	class:FunctionUnit
+vdd	.\Technology.h	/^	double vdd;			\/* Supply voltage, Unit: V *\/$/;"	m	class:Technology
+voltageIntThreshold	.\ReadCircuit.h	/^	double voltageIntThreshold;$/;"	m	class:ReadCircuit
+voltageSenseAmp	.\LUT.h	/^	VoltageSenseAmp voltageSenseAmp;$/;"	m	class:LUT
+voltageSenseAmp	.\SubArray.h	/^	VoltageSenseAmp voltageSenseAmp;$/;"	m	class:SubArray
+voltageSenseDiff	.\VoltageSenseAmp.h	/^	double voltageSenseDiff;$/;"	m	class:VoltageSenseAmp
+vth	.\Technology.h	/^	double vth;				\/* Threshold voltage, Unit: V *\/$/;"	m	class:Technology
+wAdder	.\Adder.h	/^	double hAdder, wAdder;$/;"	m	class:Adder
+wDff	.\ReadCircuit.h	/^	double areaUnit, hUnit, wUnit, areaReadBody, hReadBody, wReadBody, areaDff, hDff, wDff;$/;"	m	class:ReadCircuit
+wNmosL	.\CurrentSenseAmp.h	/^	double hNmosL, wNmosL, hNmosS, wNmosS, hNmosM, wNmosM;$/;"	m	class:CurrentSenseAmp
+wNmosM	.\CurrentSenseAmp.h	/^	double hNmosL, wNmosL, hNmosS, wNmosS, hNmosM, wNmosM;$/;"	m	class:CurrentSenseAmp
+wNmosS	.\CurrentSenseAmp.h	/^	double hNmosL, wNmosL, hNmosS, wNmosS, hNmosM, wNmosM;$/;"	m	class:CurrentSenseAmp
+wReadBody	.\ReadCircuit.h	/^	double areaUnit, hUnit, wUnit, areaReadBody, hReadBody, wReadBody, areaDff, hDff, wDff;$/;"	m	class:ReadCircuit
+wUnit	.\ReadCircuit.h	/^	double areaUnit, hUnit, wUnit, areaReadBody, hReadBody, wReadBody, areaDff, hDff, wDff;$/;"	m	class:ReadCircuit
+width	.\FunctionUnit.h	/^	double width;		\/* Unit: m *\/$/;"	m	class:FunctionUnit
+widthAccessCMOS	.\MemCell.h	/^	double widthAccessCMOS;	\/* The gate width of CMOS access transistor, Unit: F *\/$/;"	m	class:MemCell
+widthArray	.\CurrentSenseAmp.h	/^	double widthArray;$/;"	m	class:CurrentSenseAmp
+widthArray	.\SubArray.h	/^	double widthArray;$/;"	m	class:SubArray
+widthDffInvN	.\ReadCircuit.h	/^	double widthDffTgN, widthDffTgP, widthDffInvN, widthDffInvP, widthDffNorN, widthDffNorP, widthTgN, widthTgP, widthInvN, widthInvP;$/;"	m	class:ReadCircuit
+widthDffInvP	.\ReadCircuit.h	/^	double widthDffTgN, widthDffTgP, widthDffInvN, widthDffInvP, widthDffNorN, widthDffNorP, widthTgN, widthTgP, widthInvN, widthInvP;$/;"	m	class:ReadCircuit
+widthDffNorN	.\ReadCircuit.h	/^	double widthDffTgN, widthDffTgP, widthDffInvN, widthDffInvP, widthDffNorN, widthDffNorP, widthTgN, widthTgP, widthInvN, widthInvP;$/;"	m	class:ReadCircuit
+widthDffNorP	.\ReadCircuit.h	/^	double widthDffTgN, widthDffTgP, widthDffInvN, widthDffInvP, widthDffNorN, widthDffNorP, widthTgN, widthTgP, widthInvN, widthInvP;$/;"	m	class:ReadCircuit
+widthDffTgN	.\ReadCircuit.h	/^	double widthDffTgN, widthDffTgP, widthDffInvN, widthDffInvP, widthDffNorN, widthDffNorP, widthTgN, widthTgP, widthInvN, widthInvP;$/;"	m	class:ReadCircuit
+widthDffTgP	.\ReadCircuit.h	/^	double widthDffTgN, widthDffTgP, widthDffInvN, widthDffInvP, widthDffNorN, widthDffNorP, widthTgN, widthTgP, widthInvN, widthInvP;$/;"	m	class:ReadCircuit
+widthDriverInvN	.\RowDecoder.h	/^	double widthInvN, widthInvP, widthNandN, widthNandP, widthNorN, widthNorP, widthDriverInvN, widthDriverInvP;$/;"	m	class:RowDecoder
+widthDriverInvP	.\RowDecoder.h	/^	double widthInvN, widthInvP, widthNandN, widthNandP, widthNorN, widthNorP, widthDriverInvN, widthDriverInvP;$/;"	m	class:RowDecoder
+widthEnInvN	.\Mux.h	/^	double widthNandN, widthNandP, widthEnInvN, widthEnInvP, widthTgN, widthTgP, widthMuxInvN, widthMuxInvP;$/;"	m	class:Mux
+widthEnInvP	.\Mux.h	/^	double widthNandN, widthNandP, widthEnInvN, widthEnInvP, widthTgN, widthTgP, widthMuxInvN, widthMuxInvP;$/;"	m	class:Mux
+widthFin	.\Technology.h	/^	double widthFin;	\/* Fin width, Unit: m *\/$/;"	m	class:Technology
+widthInFeatureSize	.\MemCell.h	/^	double widthInFeatureSize;	\/* Cell width, Unit: F *\/$/;"	m	class:MemCell
+widthInvN	.\Comparator.h	/^	double widthInvN, widthInvP, widthNand2N, widthNand2P, widthNand3N, widthNand3P;$/;"	m	class:Comparator
+widthInvN	.\DFF.h	/^	double widthTgN, widthTgP, widthInvN, widthInvP;$/;"	m	class:DFF
+widthInvN	.\DeMux.h	/^	double widthInvN, widthInvP, widthTgN, widthTgP;$/;"	m	class:DeMux
+widthInvN	.\DecoderDriver.h	/^	double widthInvN, widthInvP, widthTgN, widthTgP;$/;"	m	class:DecoderDriver
+widthInvN	.\LUT.h	/^	double widthInvN, widthInvP;$/;"	m	class:LUT
+widthInvN	.\MultilevelSAEncoder.h	/^	double widthInvN, widthInvP, widthNandN, widthNandP;$/;"	m	class:MultilevelSAEncoder
+widthInvN	.\MultilevelSenseAmp.h	/^	double widthInvN;$/;"	m	class:MultilevelSenseAmp
+widthInvN	.\ReadCircuit.h	/^	double widthDffTgN, widthDffTgP, widthDffInvN, widthDffInvP, widthDffNorN, widthDffNorP, widthTgN, widthTgP, widthInvN, widthInvP;$/;"	m	class:ReadCircuit
+widthInvN	.\RowDecoder.h	/^	double widthInvN, widthInvP, widthNandN, widthNandP, widthNorN, widthNorP, widthDriverInvN, widthDriverInvP;$/;"	m	class:RowDecoder
+widthInvN	.\SRAMWriteDriver.h	/^	double widthInvN, widthInvP;$/;"	m	class:SRAMWriteDriver
+widthInvN	.\ShiftAdd.h	/^	double widthInvN, widthInvP, widthNandN, widthNandP;$/;"	m	class:ShiftAdd
+widthInvN	.\WLDecoderOutput.h	/^	double widthNorN, widthNorP, widthInvN, widthInvP, widthTgN, widthTgP, widthNmos;$/;"	m	class:WLDecoderOutput
+widthInvN	.\WLNewDecoderDriver.h	/^	double widthNandN, widthNandP, widthInvN, widthInvP, widthTgN, widthTgP;$/;"	m	class:WLNewDecoderDriver
+widthInvP	.\Comparator.h	/^	double widthInvN, widthInvP, widthNand2N, widthNand2P, widthNand3N, widthNand3P;$/;"	m	class:Comparator
+widthInvP	.\DFF.h	/^	double widthTgN, widthTgP, widthInvN, widthInvP;$/;"	m	class:DFF
+widthInvP	.\DeMux.h	/^	double widthInvN, widthInvP, widthTgN, widthTgP;$/;"	m	class:DeMux
+widthInvP	.\DecoderDriver.h	/^	double widthInvN, widthInvP, widthTgN, widthTgP;$/;"	m	class:DecoderDriver
+widthInvP	.\LUT.h	/^	double widthInvN, widthInvP;$/;"	m	class:LUT
+widthInvP	.\MultilevelSAEncoder.h	/^	double widthInvN, widthInvP, widthNandN, widthNandP;$/;"	m	class:MultilevelSAEncoder
+widthInvP	.\ReadCircuit.h	/^	double widthDffTgN, widthDffTgP, widthDffInvN, widthDffInvP, widthDffNorN, widthDffNorP, widthTgN, widthTgP, widthInvN, widthInvP;$/;"	m	class:ReadCircuit
+widthInvP	.\RowDecoder.h	/^	double widthInvN, widthInvP, widthNandN, widthNandP, widthNorN, widthNorP, widthDriverInvN, widthDriverInvP;$/;"	m	class:RowDecoder
+widthInvP	.\SRAMWriteDriver.h	/^	double widthInvN, widthInvP;$/;"	m	class:SRAMWriteDriver
+widthInvP	.\ShiftAdd.h	/^	double widthInvN, widthInvP, widthNandN, widthNandP;$/;"	m	class:ShiftAdd
+widthInvP	.\WLDecoderOutput.h	/^	double widthNorN, widthNorP, widthInvN, widthInvP, widthTgN, widthTgP, widthNmos;$/;"	m	class:WLDecoderOutput
+widthInvP	.\WLNewDecoderDriver.h	/^	double widthNandN, widthNandP, widthInvN, widthInvP, widthTgN, widthTgP;$/;"	m	class:WLNewDecoderDriver
+widthMuxInvN	.\Mux.h	/^	double widthNandN, widthNandP, widthEnInvN, widthEnInvP, widthTgN, widthTgP, widthMuxInvN, widthMuxInvP;$/;"	m	class:Mux
+widthMuxInvP	.\Mux.h	/^	double widthNandN, widthNandP, widthEnInvN, widthEnInvP, widthTgN, widthTgP, widthMuxInvN, widthMuxInvP;$/;"	m	class:Mux
+widthNand2N	.\Comparator.h	/^	double widthInvN, widthInvP, widthNand2N, widthNand2P, widthNand3N, widthNand3P;$/;"	m	class:Comparator
+widthNand2P	.\Comparator.h	/^	double widthInvN, widthInvP, widthNand2N, widthNand2P, widthNand3N, widthNand3P;$/;"	m	class:Comparator
+widthNand3N	.\Comparator.h	/^	double widthInvN, widthInvP, widthNand2N, widthNand2P, widthNand3N, widthNand3P;$/;"	m	class:Comparator
+widthNand3P	.\Comparator.h	/^	double widthInvN, widthInvP, widthNand2N, widthNand2P, widthNand3N, widthNand3P;$/;"	m	class:Comparator
+widthNandN	.\Adder.h	/^	double widthNandN, widthNandP;$/;"	m	class:Adder
+widthNandN	.\MultilevelSAEncoder.h	/^	double widthInvN, widthInvP, widthNandN, widthNandP;$/;"	m	class:MultilevelSAEncoder
+widthNandN	.\Mux.h	/^	double widthNandN, widthNandP, widthEnInvN, widthEnInvP, widthTgN, widthTgP, widthMuxInvN, widthMuxInvP;$/;"	m	class:Mux
+widthNandN	.\RowDecoder.h	/^	double widthInvN, widthInvP, widthNandN, widthNandP, widthNorN, widthNorP, widthDriverInvN, widthDriverInvP;$/;"	m	class:RowDecoder
+widthNandN	.\ShiftAdd.h	/^	double widthInvN, widthInvP, widthNandN, widthNandP;$/;"	m	class:ShiftAdd
+widthNandN	.\WLNewDecoderDriver.h	/^	double widthNandN, widthNandP, widthInvN, widthInvP, widthTgN, widthTgP;$/;"	m	class:WLNewDecoderDriver
+widthNandP	.\Adder.h	/^	double widthNandN, widthNandP;$/;"	m	class:Adder
+widthNandP	.\MultilevelSAEncoder.h	/^	double widthInvN, widthInvP, widthNandN, widthNandP;$/;"	m	class:MultilevelSAEncoder
+widthNandP	.\Mux.h	/^	double widthNandN, widthNandP, widthEnInvN, widthEnInvP, widthTgN, widthTgP, widthMuxInvN, widthMuxInvP;$/;"	m	class:Mux
+widthNandP	.\RowDecoder.h	/^	double widthInvN, widthInvP, widthNandN, widthNandP, widthNorN, widthNorP, widthDriverInvN, widthDriverInvP;$/;"	m	class:RowDecoder
+widthNandP	.\ShiftAdd.h	/^	double widthInvN, widthInvP, widthNandN, widthNandP;$/;"	m	class:ShiftAdd
+widthNandP	.\WLNewDecoderDriver.h	/^	double widthNandN, widthNandP, widthInvN, widthInvP, widthTgN, widthTgP;$/;"	m	class:WLNewDecoderDriver
+widthNmos	.\CurrentSenseAmp.h	/^	double widthNmos, widthPmos;$/;"	m	class:CurrentSenseAmp
+widthNmos	.\VoltageSenseAmp.h	/^	double widthNmos, widthPmos;$/;"	m	class:VoltageSenseAmp
+widthNmos	.\WLDecoderOutput.h	/^	double widthNorN, widthNorP, widthInvN, widthInvP, widthTgN, widthTgP, widthNmos;$/;"	m	class:WLDecoderOutput
+widthNmos1	.\ReadCircuit.h	/^	double widthNmos1, widthPmos1, widthNmos2, widthNmos3, widthPmos3, widthNmos4, widthPmos4, widthNmos5, widthPmos5, widthNmos6, widthNmos7, widthNmos8, widthPmos8;$/;"	m	class:ReadCircuit
+widthNmos2	.\ReadCircuit.h	/^	double widthNmos1, widthPmos1, widthNmos2, widthNmos3, widthPmos3, widthNmos4, widthPmos4, widthNmos5, widthPmos5, widthNmos6, widthNmos7, widthNmos8, widthPmos8;$/;"	m	class:ReadCircuit
+widthNmos3	.\ReadCircuit.h	/^	double widthNmos1, widthPmos1, widthNmos2, widthNmos3, widthPmos3, widthNmos4, widthPmos4, widthNmos5, widthPmos5, widthNmos6, widthNmos7, widthNmos8, widthPmos8;$/;"	m	class:ReadCircuit
+widthNmos4	.\ReadCircuit.h	/^	double widthNmos1, widthPmos1, widthNmos2, widthNmos3, widthPmos3, widthNmos4, widthPmos4, widthNmos5, widthPmos5, widthNmos6, widthNmos7, widthNmos8, widthPmos8;$/;"	m	class:ReadCircuit
+widthNmos5	.\ReadCircuit.h	/^	double widthNmos1, widthPmos1, widthNmos2, widthNmos3, widthPmos3, widthNmos4, widthPmos4, widthNmos5, widthPmos5, widthNmos6, widthNmos7, widthNmos8, widthPmos8;$/;"	m	class:ReadCircuit
+widthNmos6	.\ReadCircuit.h	/^	double widthNmos1, widthPmos1, widthNmos2, widthNmos3, widthPmos3, widthNmos4, widthPmos4, widthNmos5, widthPmos5, widthNmos6, widthNmos7, widthNmos8, widthPmos8;$/;"	m	class:ReadCircuit
+widthNmos7	.\ReadCircuit.h	/^	double widthNmos1, widthPmos1, widthNmos2, widthNmos3, widthPmos3, widthNmos4, widthPmos4, widthNmos5, widthPmos5, widthNmos6, widthNmos7, widthNmos8, widthPmos8;$/;"	m	class:ReadCircuit
+widthNmos8	.\ReadCircuit.h	/^	double widthNmos1, widthPmos1, widthNmos2, widthNmos3, widthPmos3, widthNmos4, widthPmos4, widthNmos5, widthPmos5, widthNmos6, widthNmos7, widthNmos8, widthPmos8;$/;"	m	class:ReadCircuit
+widthNorN	.\RowDecoder.h	/^	double widthInvN, widthInvP, widthNandN, widthNandP, widthNorN, widthNorP, widthDriverInvN, widthDriverInvP;$/;"	m	class:RowDecoder
+widthNorN	.\WLDecoderOutput.h	/^	double widthNorN, widthNorP, widthInvN, widthInvP, widthTgN, widthTgP, widthNmos;$/;"	m	class:WLDecoderOutput
+widthNorP	.\RowDecoder.h	/^	double widthInvN, widthInvP, widthNandN, widthNandP, widthNorN, widthNorP, widthDriverInvN, widthDriverInvP;$/;"	m	class:RowDecoder
+widthNorP	.\WLDecoderOutput.h	/^	double widthNorN, widthNorP, widthInvN, widthInvP, widthTgN, widthTgP, widthNmos;$/;"	m	class:WLDecoderOutput
+widthPMOSBitlineEqual	.\Precharger.h	/^	double widthPMOSBitlinePrecharger, widthPMOSBitlineEqual;$/;"	m	class:Precharger
+widthPMOSBitlinePrecharger	.\Precharger.h	/^	double widthPMOSBitlinePrecharger, widthPMOSBitlineEqual;$/;"	m	class:Precharger
+widthPmos	.\CurrentSenseAmp.h	/^	double widthNmos, widthPmos;$/;"	m	class:CurrentSenseAmp
+widthPmos	.\VoltageSenseAmp.h	/^	double widthNmos, widthPmos;$/;"	m	class:VoltageSenseAmp
+widthPmos1	.\ReadCircuit.h	/^	double widthNmos1, widthPmos1, widthNmos2, widthNmos3, widthPmos3, widthNmos4, widthPmos4, widthNmos5, widthPmos5, widthNmos6, widthNmos7, widthNmos8, widthPmos8;$/;"	m	class:ReadCircuit
+widthPmos3	.\ReadCircuit.h	/^	double widthNmos1, widthPmos1, widthNmos2, widthNmos3, widthPmos3, widthNmos4, widthPmos4, widthNmos5, widthPmos5, widthNmos6, widthNmos7, widthNmos8, widthPmos8;$/;"	m	class:ReadCircuit
+widthPmos4	.\ReadCircuit.h	/^	double widthNmos1, widthPmos1, widthNmos2, widthNmos3, widthPmos3, widthNmos4, widthPmos4, widthNmos5, widthPmos5, widthNmos6, widthNmos7, widthNmos8, widthPmos8;$/;"	m	class:ReadCircuit
+widthPmos5	.\ReadCircuit.h	/^	double widthNmos1, widthPmos1, widthNmos2, widthNmos3, widthPmos3, widthNmos4, widthPmos4, widthNmos5, widthPmos5, widthNmos6, widthNmos7, widthNmos8, widthPmos8;$/;"	m	class:ReadCircuit
+widthPmos8	.\ReadCircuit.h	/^	double widthNmos1, widthPmos1, widthNmos2, widthNmos3, widthPmos3, widthNmos4, widthPmos4, widthNmos5, widthPmos5, widthNmos6, widthNmos7, widthNmos8, widthPmos8;$/;"	m	class:ReadCircuit
+widthSRAMCellNMOS	.\MemCell.h	/^	double widthSRAMCellNMOS;	\/* The gate width of NMOS in SRAM cells, Unit: F *\/$/;"	m	class:MemCell
+widthSRAMCellPMOS	.\MemCell.h	/^	double widthSRAMCellPMOS;	\/* The gate width of PMOS in SRAM cells, Unit: F *\/$/;"	m	class:MemCell
+widthTgN	.\DFF.h	/^	double widthTgN, widthTgP, widthInvN, widthInvP;$/;"	m	class:DFF
+widthTgN	.\DeMux.h	/^	double widthInvN, widthInvP, widthTgN, widthTgP;$/;"	m	class:DeMux
+widthTgN	.\DecoderDriver.h	/^	double widthInvN, widthInvP, widthTgN, widthTgP;$/;"	m	class:DecoderDriver
+widthTgN	.\Mux.h	/^	double widthNandN, widthNandP, widthEnInvN, widthEnInvP, widthTgN, widthTgP, widthMuxInvN, widthMuxInvP;$/;"	m	class:Mux
+widthTgN	.\NewSwitchMatrix.h	/^	double widthTgN, widthTgP;$/;"	m	class:NewSwitchMatrix
+widthTgN	.\ReadCircuit.h	/^	double widthDffTgN, widthDffTgP, widthDffInvN, widthDffInvP, widthDffNorN, widthDffNorP, widthTgN, widthTgP, widthInvN, widthInvP;$/;"	m	class:ReadCircuit
+widthTgN	.\SwitchMatrix.h	/^	double widthTgN, widthTgP;$/;"	m	class:SwitchMatrix
+widthTgN	.\WLDecoderOutput.h	/^	double widthNorN, widthNorP, widthInvN, widthInvP, widthTgN, widthTgP, widthNmos;$/;"	m	class:WLDecoderOutput
+widthTgN	.\WLNewDecoderDriver.h	/^	double widthNandN, widthNandP, widthInvN, widthInvP, widthTgN, widthTgP;$/;"	m	class:WLNewDecoderDriver
+widthTgP	.\DFF.h	/^	double widthTgN, widthTgP, widthInvN, widthInvP;$/;"	m	class:DFF
+widthTgP	.\DeMux.h	/^	double widthInvN, widthInvP, widthTgN, widthTgP;$/;"	m	class:DeMux
+widthTgP	.\DecoderDriver.h	/^	double widthInvN, widthInvP, widthTgN, widthTgP;$/;"	m	class:DecoderDriver
+widthTgP	.\Mux.h	/^	double widthNandN, widthNandP, widthEnInvN, widthEnInvP, widthTgN, widthTgP, widthMuxInvN, widthMuxInvP;$/;"	m	class:Mux
+widthTgP	.\NewSwitchMatrix.h	/^	double widthTgN, widthTgP;$/;"	m	class:NewSwitchMatrix
+widthTgP	.\ReadCircuit.h	/^	double widthDffTgN, widthDffTgP, widthDffInvN, widthDffInvP, widthDffNorN, widthDffNorP, widthTgN, widthTgP, widthInvN, widthInvP;$/;"	m	class:ReadCircuit
+widthTgP	.\SwitchMatrix.h	/^	double widthTgN, widthTgP;$/;"	m	class:SwitchMatrix
+widthTgP	.\WLDecoderOutput.h	/^	double widthNorN, widthNorP, widthInvN, widthInvP, widthTgN, widthTgP, widthNmos;$/;"	m	class:WLDecoderOutput
+widthTgP	.\WLNewDecoderDriver.h	/^	double widthNandN, widthNandP, widthInvN, widthInvP, widthTgN, widthTgP;$/;"	m	class:WLNewDecoderDriver
+widthTgShared	.\Mux.h	/^	double widthTgShared;$/;"	m	class:Mux
+widthVoltageSenseAmp	.\VoltageSenseAmp.h	/^	double widthVoltageSenseAmp;$/;"	m	class:VoltageSenseAmp
+wlDecoder	.\SubArray.h	/^	RowDecoder  wlDecoder;$/;"	m	class:SubArray
+wlDecoderDriver	.\SubArray.h	/^	DecoderDriver wlDecoderDriver;$/;"	m	class:SubArray
+wlDecoderOutput	.\SubArray.h	/^	WLDecoderOutput wlDecoderOutput;$/;"	m	class:SubArray
+wlNewDecoderDriver	.\SubArray.h	/^	WLNewDecoderDriver wlNewDecoderDriver;$/;"	m	class:SubArray
+wlNewSwitchMatrix	.\SubArray.h	/^	NewSwitchMatrix wlNewSwitchMatrix;$/;"	m	class:SubArray
+wlSwitchMatrix	.\SubArray.h	/^	SwitchMatrix    wlSwitchMatrix;$/;"	m	class:SubArray
+writeDynamicEnergy	.\FunctionUnit.h	/^	double readDynamicEnergy, writeDynamicEnergy;	\/* Unit: J *\/$/;"	m	class:FunctionUnit
+writeDynamicEnergyArray	.\SubArray.h	/^	double readDynamicEnergyArray, writeDynamicEnergyArray;$/;"	m	class:SubArray
+writeLatency	.\FunctionUnit.h	/^	double readLatency, writeLatency;		\/* Unit: s *\/$/;"	m	class:FunctionUnit
+writePower	.\FunctionUnit.h	/^	double readPower, writePower;$/;"	m	class:FunctionUnit
+writePulseWidth	.\MemCell.h	/^	double writePulseWidth;$/;"	m	class:MemCell
+writeVoltage	.\MemCell.h	/^	double writeVoltage;$/;"	m	class:MemCell
+~Adder	.\Adder.h	/^	virtual ~Adder() {}$/;"	f	class:Adder
+~Comparator	.\Comparator.h	/^	virtual ~Comparator() {}$/;"	f	class:Comparator
+~CurrentSenseAmp	.\CurrentSenseAmp.cpp	/^CurrentSenseAmp::~CurrentSenseAmp() {$/;"	f	class:CurrentSenseAmp
+~DFF	.\DFF.h	/^	virtual ~DFF() {}$/;"	f	class:DFF
+~DeMux	.\DeMux.h	/^	virtual ~DeMux() {}$/;"	f	class:DeMux
+~DecoderDriver	.\DecoderDriver.h	/^	virtual ~DecoderDriver() {}$/;"	f	class:DecoderDriver
+~FunctionUnit	.\FunctionUnit.h	/^	virtual ~FunctionUnit() {}$/;"	f	class:FunctionUnit
+~LUT	.\LUT.h	/^	virtual ~LUT() {}$/;"	f	class:LUT
+~MultilevelSAEncoder	.\MultilevelSAEncoder.h	/^	virtual ~MultilevelSAEncoder() {}$/;"	f	class:MultilevelSAEncoder
+~MultilevelSenseAmp	.\MultilevelSenseAmp.h	/^	virtual ~MultilevelSenseAmp() {}$/;"	f	class:MultilevelSenseAmp
+~Mux	.\Mux.h	/^	virtual ~Mux() {}$/;"	f	class:Mux
+~NewSwitchMatrix	.\NewSwitchMatrix.cpp	/^NewSwitchMatrix::~NewSwitchMatrix() {$/;"	f	class:NewSwitchMatrix
+~Precharger	.\Precharger.h	/^	virtual ~Precharger() {}$/;"	f	class:Precharger
+~ReadCircuit	.\ReadCircuit.h	/^	virtual ~ReadCircuit() {}$/;"	f	class:ReadCircuit
+~RippleCounter	.\RippleCounter.h	/^	virtual ~RippleCounter() {}$/;"	f	class:RippleCounter
+~RowDecoder	.\RowDecoder.h	/^	virtual ~RowDecoder() {}$/;"	f	class:RowDecoder
+~SRAMWriteDriver	.\SRAMWriteDriver.h	/^	virtual ~SRAMWriteDriver() {}$/;"	f	class:SRAMWriteDriver
+~SenseAmp	.\SenseAmp.h	/^	virtual ~SenseAmp() {}$/;"	f	class:SenseAmp
+~ShiftAdd	.\ShiftAdd.h	/^	virtual ~ShiftAdd() {}$/;"	f	class:ShiftAdd
+~SubArray	.\SubArray.h	/^	virtual ~SubArray() {}$/;"	f	class:SubArray
+~SwitchMatrix	.\SwitchMatrix.h	/^	virtual ~SwitchMatrix() {}$/;"	f	class:SwitchMatrix
+~Technology	.\Technology.h	/^	virtual ~Technology() {}$/;"	f	class:Technology
+~VoltageSenseAmp	.\VoltageSenseAmp.h	/^	virtual ~VoltageSenseAmp() {}$/;"	f	class:VoltageSenseAmp
+~WLDecoderOutput	.\WLDecoderOutput.h	/^	virtual ~WLDecoderOutput() {}$/;"	f	class:WLDecoderOutput
+~WLNewDecoderDriver	.\WLNewDecoderDriver.cpp	/^WLNewDecoderDriver::~WLNewDecoderDriver() {$/;"	f	class:WLNewDecoderDriver

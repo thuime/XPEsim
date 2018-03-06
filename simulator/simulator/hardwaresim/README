@@ -1,0 +1,45 @@
+# This is the hardware evaluation of RRAM-based Process Unit
+
+Module File List
+├── ActivationFunc.cpp 
+├── Adder.cpp
+├── Comparator.cpp
+├── Core.cpp
+├── CurrentSenseAmp.cpp
+├── DecoderDriver.cpp
+├── DeMux.cpp
+├── DFF.cpp
+├── formula.cpp
+├── FunctionUnit.cpp
+├── HWsim.cpp
+├── HWsimMain.cpp
+├── HWsim_test.cpp #Test file
+├── LUT.cpp
+├── MultilevelSAEncoder.cpp
+├── MultilevelSenseAmp.cpp
+├── Mux.cpp
+├── NewSwitchMatrix.cpp
+├── Precharger.cpp
+├── ReadCircuit.cpp
+├── ReadParam.cpp
+├── RippleCounter.cpp
+├── RowDecoder.cpp
+├── SenseAmp.cpp
+├── ShiftAdd.cpp
+├── SRAMWriteDriver.cpp
+├── SubArray.cpp
+├── Sum.cpp
+├── SwitchMatrix.cpp
+├── Technology.cpp
+├── VoltageSenseAmp.cpp
+├── WLDecoderOutput.cpp
+├── WLNewDecoderDriver.cpp
+
+A Swig interface for python is implemented in 
+├── HWsim.i
+├── setup.py
+├── HWsim.py
+
+A test file for Swig interface is 
+├── test_recompile.sh
+├── test.sh

@@ -1,0 +1,19 @@
+# This is the Algorithm evaluation of RRAM-based Process Unit
+
+module list
+├── __init__.py
+│   ├── activationfunc.py
+│   ├── array.py
+│   ├── corecal.py
+│   ├── getrefv.py
+│   ├── hweval.py
+│   ├── __init__.py
+│   ├── inputcompile.py
+│   ├── layercal2.py
+│   ├── layercal.py
+│   ├── nncompile.py
+├── parameterinput.py
+├── sysfunctional.py
+├── systemsim.py
+
+

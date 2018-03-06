@@ -1,0 +1,176 @@
+#SystemCal.py
+
+from __future__ import print_function, division
+import numpy as np
+import csv
+import os
+from .sysfunctional import AccCal 
+from .module import NNcompile, Inputcompile, GetRefV
+from .module import ActivationFunc, LayerCal
+from ..hardwaresim.HWsim import HWsim
+import netlang
+
+class SystemSim(object):
+    def __init__(self, params):
+        super(SystemSim, self).__init__()
+        self.params = params
+        self.Gmax = params.Gmax
+        self.Gmin = params.Gmin
+        self.ReadVoltage = params.ReadVoltage
+        self.numCol = params.numCol
+        self.numRow = params.numRow
+        self.WeightBits = params.WeightBits
+        self.CellBits = params.CellBits
+        self.IOBits = params.IOBits
+        self.ADBits = params.ADBits
+        self.numCoreVMax = params.numCoreVMax
+        self.numCoreHMax = params.numCoreHMax
+        self.ReadPulseWidth = params.ReadPulseWidth
+        self.numCellperWeight = params.numCellperWeight
+        self.numLayerOutput = params.numLayerOutput
+        self.RangeMax = params.RangeMax # The range of bitwise weight is from -self.RangeMax to (self.RangeMax-1)
+        
+        self.Accuracy = 0
+        self.CoresInfo = [] # numCoreV and numCoreH in every layer
+    
+    def apply(self, Net, Weight, Input, Label=None):
+        """
+        Numerical computing of hardware
+        """
+        #TODO add Conv layer
+        #Conv = []
+        Linear = []
+        #numConv = 0
+        self.numLinear = 0
+        for i in Net:
+            if i[0] == "NoiseLinear" or i[0] == "Linear":
+                weight = Weight[i[0]+str(self.numLinear)]["weight"]
+                bias = Weight[i[0]+str(self.numLinear)]["bias"]
+                Linear.append((weight, bias))
+                self.numLinear += 1
+        
+        # input data pretreatment
+        for i in range(Input.shape[0]):
+            Input[i] = np.round(Input[i] * (2 ** self.IOBits - 1))
+        
+        self.BatchSize = len(Input)
+        InputPulse = Input
+        self.WeightArrays = []
+        self.InputPulse = []
+        self.MaxCurrent = []
+        
+        nncompiler = NNcompile(self.params)
+        inputcompiler = Inputcompile(self.params)
+        getrefv = GetRefV(self.params)
+        activationfunc = ActivationFunc(self.params)
+        layercal = LayerCal(self.params)
+        
+        for i in range(self.numLinear):
+            
+            print("Start to compile layer-%d" % (i+1))
+            Layer = Linear[i]
+            Weight = np.concatenate((Layer[0], Layer[1].reshape(1, -1)), axis=0)
+            WeightArrays_, CoresInfo_ = nncompiler.apply(Weight)
+            
+            self.WeightArrays.append(WeightArrays_)
+            self.CoresInfo.append(CoresInfo_)
+            
+            InputPulse_ = inputcompiler.apply(Input)
+            self.InputPulse.append(InputPulse_)
+
+            self.MaxCurrent.append(getrefv.apply(InputPulse_,
+                                                 WeightArrays_,
+                                                 Weight.shape[1]))
+            print("Start to calculate layer-%d" % (i+1))
+            Output = layercal.DenseCal(InputPulse_, 
+                                       self.WeightArrays[i],
+                                       self.MaxCurrent[i],
+                                       Weight.shape[1])
+            
+            Output = activationfunc.apply(Output, "ReLU")
+
+            Input = Output
+
+        self.Output = Output
+        if (not(Label is None)):
+            self.Accuracy = AccCal(Label, Output)
+            
+    def SaveMapData(self,
+                    Weight,
+                    Input,
+                    WeightFile="MapWeight.csv",
+                    InputFile="MapInput.csv"):
+        """
+        Save the inputs of input layer and weights after mapping
+        """
+        with open(WeightFile, "w") as f:
+            writer = csv.writer(f)
+            for i_layer in range(len(Weight)):
+                for i_arrayV in range(len(Weight[i_layer])):
+                    for i_arrayH in range(len(Weight[i_layer][i_arrayV])):
+                        writer.writerow(("Layer", i_layer))
+                        writer.writerow(("i_arrayV", i_arrayV))
+                        writer.writerow(("i_arrayH", i_arrayH))
+                        writer.writerow(("AD reference current", self.MaxCurrent[i_layer]))
+                        writer.writerows((Weight[i_layer][i_arrayV][i_arrayH]))
+#        with open(InputFile, "w") as f:
+#            writer = csv.writer(f)
+#            for i_batch in range(len(Input)):
+#                for i_arrayV in range(len
+
+
+    def HWEvaluate(self):
+    
+        HWsim_ = HWsim()
+        HWsim_.Initialize()
+        HWsim_.CalculateArea()
+        HWsim_.CalculateLatency()
+        HWsim_.CalculatePower()
+
+        numCoreMax = self.numCoreHMax * self.numCoreVMax
+        numMVop = 0
+        for i in range(self.numLinear):
+            numMVop += self.CoresInfo[i][0] * self.CoresInfo[i][1]
+
+        if numMVop > numCoreMax:
+            numHWop = np.ceil(numMVop / numCoreMax)
+            self.umCore = numCoreMax
+        else:
+            numHWop = 1
+            self.numCore = numMVop
+
+        self.HWArea = HWsim_.area
+        self.HWReadLatency = HWsim_.readLatency
+        self.HWReadPower = HWsim_.readPower
+        self.HWReadDynamicEnergy = HWsim_.readDynamicEnergy
+
+        numOps = numMVop * self.numCol * self.numRow * 2 # 2 for add and multipy
+        timeops = numOps/(self.HWReadLatency + self.ReadPulseWidth * self.IOBits)
+        areaops = numOps/self.HWArea
+        powerops = timeops/(self.HWReadPower/1e6)
+        self.HWtimeops = timeops
+        self.HWpowerops = powerops
+        self.HWareaops = areaops
+
+    def show(self):
+        '''
+        Print some data to console
+        '''
+        print("\n")
+        print("---------------------------------")
+        print("------------ Results ------------")
+        print("---------------------------------")
+        print("-Number of used Cores:", self.numCore)
+        print("-RRAM Array Size:", self.numCol, "x", self.numRow)
+        print("-Area:", self.HWArea, "mm^2")
+        print("-ReadDynamicEnergy:", self.HWReadDynamicEnergy/1e3, "nJ/img")
+        print("-ReadPower:", self.HWReadPower/1e6, "W")
+        print("-Performace")
+        print("|-Computing Performance:", self.HWtimeops/1e3, "TOPS")
+        print("|-Energy Performance:", self.HWpowerops/1e3, "TOPS/W")
+        print("|-Area Performance:", self.HWareaops/1e3, "TOPS/mm^2")
+        print("-Accuracy:", self.Accuracy*100, "%")
+
+if __name__ == "__main__":
+    pass
+

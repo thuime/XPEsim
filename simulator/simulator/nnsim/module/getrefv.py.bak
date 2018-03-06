@@ -1,0 +1,83 @@
+# -*- coding: utf-8 -*-
+#getrefv.py
+
+from __future__ import print_function, division
+import numpy as np
+
+class GetRefV(object):
+
+    def __init__(self, params):
+        super(GetRefV, self).__init__()
+        
+        self.params = params
+        self.ReadVoltage = params.ReadVoltage
+        self.numCol = params.numCol
+        self.numRow = params.numRow
+        self.WeightBits = params.WeightBits
+        self.CellBits = params.CellBits
+        self.IOBits = params.IOBits
+        self.numCellperWeight = params.numCellperWeight
+
+
+    def apply(self, Input, WeightArrays, numLayerOutput, LayerInfo="Linear",
+            input_size_x=0, input_size_y=0, kernel_size_x=0, kernel_size_y=0):
+        """
+        Find the max current as AD reference current among the cores in a layer
+        require args:
+            Input: The Inputs of a layer
+            WeightArrays: the compiled weights of a layer
+            numLayerOutput: the output size of a layer
+            LayerInfo: "Linear" or "Conv"
+        """
+        def tob(a, iobit, n_input):
+            temp0 = []
+            # temp0 1-n inputs,temp1 top-bottom input_size/input_n input,temp2, high-low iobit
+            m_input = numpy.ceil(float(a[0].shape[0] + 1) / n_input * 1.0)
+            iomax = 0
+            for i in a:
+                iomax = max(iomax, i.max())
+            for i in a:
+                i = i.reshape(-1)
+                i = numpy.concatenate((numpy.zeros((int(m_input * n_input) - i.shape[0] - 1)), i), axis=0)
+                i = numpy.concatenate((i, numpy.ones(1)), axis=0)
+                i = i.reshape(-1, 1)
+                temp1 = numpy.vsplit(i, m_input)
+                for k in range(len(temp1)):
+                    temp2 = []
+                    for j in range(iobit - 1, -1, -1):
+                        temp = numpy.floor(temp1[k] / 2 ** j)
+                        temp2.append(temp)
+                        temp1[k] = temp1[k] - temp * 2 ** j
+                    temp1[k] = numpy.asarray(temp2)
+                temp0.append(numpy.asarray(temp1))
+            return numpy.asarray(temp0)
+        if LayerInfo == "Linear":
+            MaxCurrent = 0
+            for i in range(len(Input)):
+                Sample = Input[i]
+                for j in range(len(WeightArrays)):
+                    InputCore = Sample[j]
+                    WeightCoreH = WeightArrays[j]
+                    numOutputRemain = numLayerOutput * self.numCellperWeight
+                    for k in range(len(WeightCoreH)):
+                        WeightCore = WeightCoreH[k]
+                        for l in range(self.IOBits):# IOBits
+                            OutputCore = np.dot(np.transpose(InputCore[l]),
+                                WeightCore) * self.ReadVoltage
+                            if numOutputRemain > self.numCol:
+                                OutputCore = OutputCore
+                            else:
+                                
+                                OutputCore = OutputCore[0:numOutputRemain]
+                            MaxCurrent = max(MaxCurrent, OutputCore.max())
+                        numOutputRemain = numOutputRemain - \
+                            (self.numCol - self.numCellperWeight)
+            return MaxCurrent
+        if LayerInfo == "Conv":
+            MaxCurrent = 0
+            for in_x in Input:
+                for i in range(input_size_x-kernel_size_x+1):
+                    for j in range(input_size_y-kernel_size_y+1):
+                        xx = in_x[:, i:i + kernel_size_x, j:j + kernel_size_y]
+                        xx = xx.reshape(1, -1)
+

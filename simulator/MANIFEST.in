@@ -1,0 +1,2 @@
+recursive-include simulator/hardwaresim test_core 
+recursive-include simulator/hardwaresim HWsim
